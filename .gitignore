@@ -1,16 +1,16 @@
 # Config files, logs and stuff
-SaitamaRobot/modules/helper_funcs/temp.txt
-SaitamaRobot/elevated_users.json
-SaitamaRobot/config.py
-SaitamaRobot/config.ini
+MashaRoBot/modules/helper_funcs/temp.txt
+MashaRoBot/elevated_users.json
+MashaRoBot/config.py
+MashaRoBot/config.ini
 log.txt
 kangsticker.png
 updates.txt
 
 # Session files
-SaitamaRobot/*.session
-SaitamaRobot/*.session-journal
-saitama.session-journal
+MashaRoBot/*.session
+MashaRoBot/*.session-journal
+Masha.session-journal
 *.session
 
 # Byte-compiled / optimized / DLL files
