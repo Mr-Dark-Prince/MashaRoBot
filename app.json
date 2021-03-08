@@ -1,6 +1,6 @@
 {
-      "name": "SaitamaRobot",
-      "description": "An Anime themed Telegram group management bot.",
+      "name": "MashaRoBot",
+      "description": "Telegram group management bot.",
       "keywords": [
          "telegram",
          "anime",
@@ -8,7 +8,7 @@
          "manager",
          "Saitama"
       ],   
-   "repository": "https://github.com/AnimeKaizoku/SaitamaRobot",
+   "repository": "https://github.com/Mr-Dark-Prince/MashaRoBot",
    "addons": [
       {
          "options": {
@@ -156,7 +156,7 @@
       "BAN_STICKER": {
          "description": "ID of the sticker you want to use when banning people.",
          "required": false,
-         "value": "CAACAgQAAx0CU_rCTAABAczQXyBOv1TsVK4EfwnkCUT1H0GCkPQAAtwAAwEgTQaYsMtAltpEwhoE"
+         "value": ""
       },
       "WALL_API": {
          "description": "Required for wallpaper. Get your's from https://wall.alphacoders.com/",
