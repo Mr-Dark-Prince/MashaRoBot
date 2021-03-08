@@ -5,9 +5,9 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-from SaitamaRobot import DRAGONS, dispatcher
-from SaitamaRobot.modules.disable import DisableAbleCommandHandler
-from SaitamaRobot.modules.helper_funcs.chat_status import (
+from MashaRoBot import DRAGONS, dispatcher
+from MashaRoBot.modules.disable import DisableAbleCommandHandler
+from MashaRoBot.modules.helper_funcs.chat_status import (
     bot_admin,
     can_pin,
     can_promote,
@@ -16,12 +16,12 @@ from SaitamaRobot.modules.helper_funcs.chat_status import (
     ADMIN_CACHE,
 )
 
-from SaitamaRobot.modules.helper_funcs.extraction import (
+from MashaRoBot.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from SaitamaRobot.modules.log_channel import loggable
-from SaitamaRobot.modules.helper_funcs.alternate import send_message
+from MashaRoBot.modules.log_channel import loggable
+from MashaRoBot.modules.helper_funcs.alternate import send_message
 
 
 @run_async
