@@ -64,12 +64,12 @@ RUN apt update && apt upgrade -y && \
 # Pypi package Repo upgrade
 RUN pip3 install --upgrade pip setuptools
 
-# Copy Python Requirements to /root/SaitamaRobot
-RUN git clone -b shiken https://github.com/AnimeKaizoku/SaitamaRobot /root/SaitamaRobot
-WORKDIR /root/SaitamaRobot
+# Copy Python Requirements to /root/MashaRoBot
+RUN git clone -b shiken https://github.com/Mr-Dark-Prince/MashaRoBot /root/MashaRoBot
+WORKDIR /root/MashaRoBot
 
-#Copy config file to /root/SaitamaRobot/SaitamaRobot
-COPY ./SaitamaRobot/sample_config.py ./SaitamaRobot/config.py* /root/SaitamaRobot/SaitamaRobot/
+#Copy config file to /root/MashaRoBot/MashaRoBot
+COPY ./MashaRoBot/sample_config.py ./MashaRoBot/config.py* /root/MashaRoBot/MashaRoBot/
 
 ENV PATH="/home/bot/bin:$PATH"
 
@@ -77,4 +77,4 @@ ENV PATH="/home/bot/bin:$PATH"
 RUN pip3 install -U -r requirements.txt
 
 # Starting Worker
-CMD ["python3","-m","SaitamaRobot"]
+CMD ["python3","-m","MashaRoBot"]
