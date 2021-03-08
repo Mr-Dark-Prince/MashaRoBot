@@ -1,17 +1,17 @@
 import html
 from typing import Optional
 
-import SaitamaRobot.modules.sql.blsticker_sql as sql
-from SaitamaRobot import LOGGER, dispatcher
-from SaitamaRobot.modules.connection import connected
-from SaitamaRobot.modules.disable import DisableAbleCommandHandler
-from SaitamaRobot.modules.helper_funcs.alternate import send_message
-from SaitamaRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from SaitamaRobot.modules.helper_funcs.misc import split_message
-from SaitamaRobot.modules.helper_funcs.string_handling import extract_time
+import MashaRoBot.modules.sql.blsticker_sql as sql
+from MashaRoBot import LOGGER, dispatcher
+from MashaRoBot.modules.connection import connected
+from MashaRoBot.modules.disable import DisableAbleCommandHandler
+from MashaRoBot.modules.helper_funcs.alternate import send_message
+from MashaRoBot.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from MashaRoBot.modules.helper_funcs.misc import split_message
+from MashaRoBot.modules.helper_funcs.string_handling import extract_time
 
-from SaitamaRobot.modules.log_channel import loggable
-from SaitamaRobot.modules.warns import warn
+from MashaRoBot.modules.log_channel import loggable
+from MashaRoBot.modules.warns import warn
 from telegram import Chat, Message, ParseMode, Update, User, ChatPermissions
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, MessageHandler
