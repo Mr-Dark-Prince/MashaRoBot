@@ -160,7 +160,7 @@ if is_module_loaded(FILENAME):
         args = context.args
         chat = update.effective_chat
         if len(args) >= 1:
-            disable_module = "SaitamaRobot.modules." + args[0].rsplit(".", 1)[0]
+            disable_module = "MashaRoBot.modules." + args[0].rsplit(".", 1)[0]
 
             try:
                 module = importlib.import_module(disable_module)
