@@ -2,7 +2,7 @@ from time import perf_counter
 from functools import wraps
 from cachetools import TTLCache
 from threading import RLock
-from SaitamaRobot import (
+from MashaRoBot import (
     DEL_CMDS,
     DEV_USERS,
     DRAGONS,
