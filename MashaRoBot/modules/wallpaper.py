@@ -1,8 +1,8 @@
 from random import randint
 
 import requests as r
-from SaitamaRobot import SUPPORT_CHAT, WALL_API, dispatcher
-from SaitamaRobot.modules.disable import DisableAbleCommandHandler
+from MashaRoBot import SUPPORT_CHAT, WALL_API, dispatcher
+from MashaRoBot.modules.disable import DisableAbleCommandHandler
 from telegram import Update
 from telegram.ext import CallbackContext, run_async
 
