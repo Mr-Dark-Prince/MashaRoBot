@@ -222,7 +222,7 @@ def start(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="☑️ Add Saitama to your group",
+                                text="☑️ Add Masha to your group",
                                 url="t.me/{}?startgroup=true".format(
                                     context.bot.username
                                 ),
@@ -235,19 +235,19 @@ def start(update: Update, context: CallbackContext):
                             ),
                             InlineKeyboardButton(
                                 text="🔔 Updates Channel",
-                                url="https://t.me/OnePunchUpdates",
+                                url="https://t.me/telegram",
                             ),
                         ],
                         [
                             InlineKeyboardButton(
                                 text="🧾 Getting started guide",
-                                url="https://t.me/OnePunchUpdates/29",
+                                url="https://t.me/telegram",
                             )
                         ],
                         [
                             InlineKeyboardButton(
                                 text="🗄 Source code",
-                                url="https://github.com/AnimeKaizoku/SaitamaRobot",
+                                url="https://github.com/Mr-Dark-Prince/MashaRoBot",
                             )
                         ],
                     ]
