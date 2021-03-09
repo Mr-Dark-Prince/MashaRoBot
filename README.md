@@ -1,8 +1,7 @@
 
 
 
-# MashaRoBot
-✳️ MashaRobot : Telegram Group Manager Bot [⚠️Modified version of SaitamaRoBot] 
+# MashaRobot : Telegram Group Manager Bot [⚠️Modified version of SaitamaRoBot] 
 
 
 ## How To Host
