@@ -1,4 +1,5 @@
 future
+redis
 emoji
 lxml
 beautifulsoup4
