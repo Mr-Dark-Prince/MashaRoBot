@@ -19,6 +19,7 @@ from MashaRoBot import (
     dispatcher,
     StartTime,
     telethn,
+    pbot,
     updater,
 )
 
