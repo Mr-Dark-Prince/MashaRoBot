@@ -357,6 +357,33 @@ def help_button(update, context):
         pass
 
 
+@run_async
+def masha_about_callback(update, context):
+    query = update.callback_query
+    if query.data == "masha_":
+        query.message.edit_text(
+            text="""*About :*
+                 \nMasha Robot                 
+                 \n-For support @wastebots
+                 \n\n\n © @Mr_Dark_Prince """,
+            parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                 [
+                    InlineKeyboardButton(text="Back", callback_data="masha_back")
+                 ]
+                ]
+            ),
+        )
+    elif query.data == "masha_back":
+        query.message.edit_text(
+                PM_START_TEXT,
+                reply_markup=InlineKeyboardMarkup(buttons),
+                parse_mode=ParseMode.MARKDOWN,
+                timeout=60,
+                disable_web_page_preview=True,
+        )
 
 
 @run_async
@@ -651,9 +678,7 @@ def main():
     settings_handler = CommandHandler("settings", get_settings)
     settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_")
 
-    about_callback_handler = CallbackQueryHandler(
-        DaisyX_about_callback, pattern=r"aboutmanu_"
-    )
+    about_callback_handler = CallbackQueryHandler(Masha_about_callback, pattern=r"masha_")
 
     donate_handler = CommandHandler("donate", donate)
     migrate_handler = MessageHandler(Filters.status_update.migrate, migrate_chats)
