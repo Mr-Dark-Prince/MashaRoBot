@@ -32,3 +32,8 @@ pyrate-limiter
 cachetools
 ujson
 pretty_errors
+TgCrypto
+Pyrogram
+youtube-dl
+youtube_search
+requests
