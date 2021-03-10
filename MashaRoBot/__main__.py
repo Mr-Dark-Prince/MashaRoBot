@@ -73,7 +73,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hi 🤗! My name is *Masha*
+Hi [🤗](https://telegra.ph/file/6937614341f42020a2ebc.jpg) My name is *Masha*
 I'm here to help you manage your groups! Hit *📚Commands* button to find out more about how to use me to my full potential.
 """
 
@@ -83,14 +83,14 @@ buttons = [
             text="➕️ ADD MASHA TO YOUR GROUP ➕️", url="t.me/MashaRoBot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="⚠️ABOUT", callback_data="masha_"),
-        InlineKeyboardButton(text="📚COMMANDS", callback_data="help_back"),
+        InlineKeyboardButton(text="⚠️ ABOUT", callback_data="masha_"),
+        InlineKeyboardButton(text="📚 COMMANDS", callback_data="help_back"),
     ],
     [
         InlineKeyboardButton(
-            text="💾SOURCE", url="https://github.com/Mr-Dark-Prince/MashaRoBot"),
+            text="💾 SOURCE", url="https://github.com/Mr-Dark-Prince/MashaRoBot"),
         InlineKeyboardButton(
-            text="👥SUPPORT", url="https://t.me/wastebots"
+            text="👥 SUPPORT", url="https://t.me/wastebots"
         ),
     ],
 ]
