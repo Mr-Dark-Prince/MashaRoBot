@@ -78,6 +78,9 @@ Hi {}, my name is {}!
 
 buttons = [
     [
+        InlineKeyboardButton(
+            text="💼ADD MASHA TO YOUR GROUP💼", url="t.me/daisyXBot?startgroup=true"),
+    [
         InlineKeyboardButton(text="⚠️ABOUT MASHAROBOT⚠️", callback_data="masha_"),
     ],
     [
