@@ -640,7 +640,7 @@ Group admins/group owners do not need these commands.
  ╚ `/gbanlist`*:* Outputs a list of gbanned users
 
  ╔ *Global Blue Text*
- ╠ `/gignoreblue <word>`*:* globally ignorea bluetext cleaning of saved word across Saitama.
+ ╠ `/gignoreblue <word>`*:* globally ignorea bluetext cleaning of saved word across MashaRoBot.
  ╚ `/ungignoreblue <word>`*:* remove said command from global cleaning list
 
 Visit @{SUPPORT_CHAT} for more information.
