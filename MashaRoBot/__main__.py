@@ -76,6 +76,21 @@ PM_START_TEXT = """
 Hi {}, my name is {}! 
 """
 
+buttons = [
+    [
+        InlineKeyboardButton(text="⚠️ABOUT MASHAROBOT⚠️", callback_data="aboutmanu_"),
+    ],
+    [
+        InlineKeyboardButton(text="📚HELP AND COMMANDS📚", callback_data="help_back"),
+    ],
+    [
+        InlineKeyboardButton(
+            text="💼ADD MASHA TO YOUR GROUP💼", url="t.me/daisyXBot?startgroup=true"
+        ),
+    ],
+]
+
+
 HELP_STRINGS = """
 Hey there! My name is *{}*.
 I'm a Hero For Fun and help admins manage their groups with One Punch! Have a look at the following for an idea of some of \
@@ -190,10 +205,7 @@ def start(update: Update, context: CallbackContext):
                         [[InlineKeyboardButton(text="Back", callback_data="help_back")]]
                     ),
                 )
-            elif args[0].lower() == "markdownhelp":
-                IMPORTED["extras"].markdown_help_sender(update)
-            elif args[0].lower() == "disasters":
-                IMPORTED["disasters"].send_disasters(update)
+
             elif args[0].lower().startswith("stngs_"):
                 match = re.match("stngs_(.*)", args[0].lower())
                 chat = dispatcher.bot.getChat(match.group(1))
@@ -207,48 +219,11 @@ def start(update: Update, context: CallbackContext):
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
         else:
-            first_name = update.effective_user.first_name
-            update.effective_message.reply_photo(
-                MASHA_IMG,
-                PM_START_TEXT.format(
-                    escape_markdown(first_name), escape_markdown(context.bot.first_name)
-                ),
+            update.effective_message.reply_text(
+                PM_START_TEXT,
+                reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
-                disable_web_page_preview=True,
-                reply_markup=InlineKeyboardMarkup(
-                    [
-                        [
-                            InlineKeyboardButton(
-                                text="☑️ Add Masha to your group",
-                                url="t.me/{}?startgroup=true".format(
-                                    context.bot.username
-                                ),
-                            )
-                        ],
-                        [
-                            InlineKeyboardButton(
-                                text="🚑 Support Group",
-                                url=f"https://t.me/{SUPPORT_CHAT}",
-                            ),
-                            InlineKeyboardButton(
-                                text="🔔 Updates Channel",
-                                url="https://t.me/telegram",
-                            ),
-                        ],
-                        [
-                            InlineKeyboardButton(
-                                text="🧾 Getting started guide",
-                                url="https://t.me/telegram",
-                            )
-                        ],
-                        [
-                            InlineKeyboardButton(
-                                text="🗄 Source code",
-                                url="https://github.com/Mr-Dark-Prince/MashaRoBot",
-                            )
-                        ],
-                    ]
-                ),
+                timeout=60,
             )
     else:
         update.effective_message.reply_text(
