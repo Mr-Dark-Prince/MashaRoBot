@@ -73,17 +73,17 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hi 🤗! My name is Masha \ I'm here to help you manage your groups! Hit 📚Commands button to find out more about how to use me to my full potential.
-
+Hi 🤗! My name is *Masha*
+I'm here to help you manage your groups! Hit *📚Commands* button to find out more about how to use me to my full potential.
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="💼ADD MASHA TO YOUR GROUP💼", url="t.me/daisyXBot?startgroup=true"),
+            text="ADD MASHA TO YOUR GROUP", url="t.me/MashaRoBot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="⚠️ABOUT MASHAROBOT⚠️", callback_data="masha_"),
+        InlineKeyboardButton(text="⚠️ABOUT", callback_data="masha_"),
     ],
     [
         InlineKeyboardButton(text="📚HELP AND COMMANDS📚", callback_data="help_back"),
