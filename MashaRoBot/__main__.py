@@ -73,8 +73,8 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hi [🤗](https://telegra.ph/file/6937614341f42020a2ebc.jpg) My name is *Masha*
-I'm here to help you manage your groups! Hit *📚Commands* button to find out more about how to use me to my full potential.
+`Hellow` [🤗](https://telegra.ph/file/6937614341f42020a2ebc.jpg) `My name is` *Masha*
+`I'm here to help you manage your groups! Hit` *📚Commands* `button to find out more about how to use me to my full potential.` 
 """
 
 buttons = [
@@ -97,25 +97,9 @@ buttons = [
 
 
 HELP_STRINGS = """
-Hey there! My name is *{}*.
-I'm a Hero For Fun and help admins manage their groups with One Punch! Have a look at the following for an idea of some of \
-the things I can help you with.
+`Hi.. I'm` [MASHA🍀](https://telegra.ph/file/6937614341f42020a2ebc.jpg)
+`Click on the buttons below to get documentation about specific modules..`"""
 
-*Main* commands available:
- • /help: PM's you this message.
- • /help <module name>: PM's you info about that module.
- • /donate: information on how to donate!
- • /settings:
-   • in PM: will send you your settings for all supported modules.
-   • in a group: will redirect you to pm, with all that chat's settings.
-
-
-{}
-And the following:
-""".format(
-    dispatcher.bot.first_name,
-    "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
-)
 
 MASHA_IMG = "https://telegra.ph/file/6937614341f42020a2ebc.jpg"
 
