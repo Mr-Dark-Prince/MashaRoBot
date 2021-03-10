@@ -74,7 +74,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 `Hellow` [🤗](https://telegra.ph/file/6937614341f42020a2ebc.jpg) `My name is` *Masha*
-`I'm here to help you manage your groups! Hit` *📚Commands* `button to find out more about how to use me to my full potential.` 
+`I'm here to help you manage your groups! Hit` *📚Commands* `button below to find out more about how to use me to my full potential.` 
 """
 
 buttons = [
@@ -83,7 +83,7 @@ buttons = [
             text="➕️ ADD MASHA TO YOUR GROUP ➕️", url="t.me/MashaRoBot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="⚠️ ABOUT", callback_data="masha_"),
+        InlineKeyboardButton(text="ℹ️ ABOUT", callback_data="masha_"),
         InlineKeyboardButton(text="📚 COMMANDS", callback_data="help_back"),
     ],
     [
@@ -97,7 +97,7 @@ buttons = [
 
 
 HELP_STRINGS = """
-`Hi.. I'm` [MASHA🍀](https://telegra.ph/file/6937614341f42020a2ebc.jpg)
+`Hi.. I'm` [MASHA🙋‍♀️](https://telegra.ph/file/6937614341f42020a2ebc.jpg)
 `Click on the buttons below to get documentation about specific modules..`"""
 
 
@@ -351,9 +351,9 @@ def Masha_about_callback(update, context):
     query = update.callback_query
     if query.data == "masha_":
         query.message.edit_text(
-            text="""*Masha* is a bot for managing your group with additional features.
+            text=""" [ℹ️](https://telegra.ph/file/6937614341f42020a2ebc.jpg))*Masha* is a bot for managing your group with additional features.
                  \n\n_Masha's licensed under the GNU General Public License v3.0_
-                 \nhere is the [repository](https://github.com/Mr-Dark-Prince/MashaRoBot).
+                 \nHere is the [💾Repository](https://github.com/Mr-Dark-Prince/MashaRoBot).
                  \n\nIf you have any question about Masha, let us know at @WasteBots.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
