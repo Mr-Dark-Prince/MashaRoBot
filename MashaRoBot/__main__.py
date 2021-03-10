@@ -78,7 +78,7 @@ Hi {}, my name is {}!
 
 buttons = [
     [
-        InlineKeyboardButton(text="⚠️ABOUT MASHAROBOT⚠️", callback_data="aboutmanu_"),
+        InlineKeyboardButton(text="⚠️ABOUT MASHAROBOT⚠️", callback_data="masha_"),
     ],
     [
         InlineKeyboardButton(text="📚HELP AND COMMANDS📚", callback_data="help_back"),
