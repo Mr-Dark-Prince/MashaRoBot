@@ -639,6 +639,10 @@ Group admins/group owners do not need these commands.
  ╠ `/ungban`*:* Ungbans the user, same usage as gban
  ╚ `/gbanlist`*:* Outputs a list of gbanned users
 
+ ╔ *Global Blue Text*
+ ╠ `/gignoreblue <word>`*:* globally ignorea bluetext cleaning of saved word across Saitama.
+ ╚ `/ungignoreblue <word>`*:* remove said command from global cleaning list
+
 Visit @{SUPPORT_CHAT} for more information.
 """
 
@@ -672,7 +676,7 @@ dispatcher.add_handler(SUPPORTLIST_HANDLER)
 dispatcher.add_handler(SUDOLIST_HANDLER)
 dispatcher.add_handler(DEVLIST_HANDLER)
 
-__mod_name__ = "Disasters"
+__mod_name__ = "DEVS"
 __handlers__ = [
     SUDO_HANDLER,
     SUPPORT_HANDLER,
