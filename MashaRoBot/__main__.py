@@ -358,7 +358,7 @@ def help_button(update, context):
 
 
 @run_async
-def masha_about_callback(update, context):
+def Masha_about_callback(update, context):
     query = update.callback_query
     if query.data == "masha_":
         query.message.edit_text(
