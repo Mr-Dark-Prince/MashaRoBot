@@ -73,7 +73,8 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hi {}, my name is {}! 
+Hi 🤗! My name is Masha \ I'm here to help you manage your groups! Hit 📚Commands button to find out more about how to use me to my full potential.
+
 """
 
 buttons = [
