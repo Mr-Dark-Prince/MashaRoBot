@@ -367,10 +367,10 @@ def Masha_about_callback(update, context):
     query = update.callback_query
     if query.data == "masha_":
         query.message.edit_text(
-            text="*Masha* is a bot for managing your group with additional features,*"
-                 "\n\n_Masha's licensed under the GNU General Public License v3.0_,"
-                 "\nhere is the [repository](https://github.com/Mr-Dark-Prince/MashaRoBot)."
-                 "\n\nIf you have any question about Masha, let us know at @WasteBots.",
+            text="""*Masha* is a bot for managing your group with additional features.
+                 \n\n_Masha's licensed under the GNU General Public License v3.0_
+                 \nhere is the [repository](https://github.com/Mr-Dark-Prince/MashaRoBot).
+                 \n\nIf you have any question about Masha, let us know at @WasteBots.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
