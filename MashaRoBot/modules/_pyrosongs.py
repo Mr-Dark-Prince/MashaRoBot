@@ -43,7 +43,6 @@ def prince(client, message):
         duration = results[0]["duration"]
         url_suffix = results[0]["url_suffix"]
         views = results[0]["views"]
-        user_name = results[0]["user_name"]
 
     except Exception as e:
         m.edit(
@@ -57,7 +56,7 @@ def prince(client, message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = f'ℹ️ **Title**: [{title[:35]}]({link})\n⏱️ **Duration**: `{duration}`\n👁‍🗨 **Views**: `{views}`\n💡 **Requested by**: `{user_name}`'
+        rep = f'ℹ️ **Title**: [{title[:35]}]({link})\n⏱️ **Duration**: `{duration}`\n👁‍🗨 **Views**: `{views}`\n💡 **Requested by**: `{rpk}`'
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
