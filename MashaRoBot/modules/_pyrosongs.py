@@ -2,9 +2,13 @@
 # 🍀 © @Mr_Dark_Prince
 # ⚠️ Do not edit this lines
 
+import requests
 import aiohttp
+import youtube_dl
+
 from pyrogram import filters
 from MashaRoBot import pbot
+from youtube_search import YoutubeSearch
 
 
 def time_to_seconds(time):
