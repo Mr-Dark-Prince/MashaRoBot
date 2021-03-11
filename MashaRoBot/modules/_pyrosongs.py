@@ -17,8 +17,8 @@ def time_to_seconds(time):
     return sum(int(x) * 60 ** i for i, x in enumerate(reversed(stringt.split(':'))))
 
 
-@pbot.on_message(filters.command(['prince']))
-def prince(client, message):
+@pbot.on_message(filters.command(['song']))
+def song(client, message):
 
     user_id = message.from_user.id 
     user_name = message.from_user.first_name 
@@ -51,7 +51,7 @@ def prince(client, message):
         )
         print(str(e))
         return
-    m.edit("⏬ Downloading.")
+    m.edit("⏬ Downloading.. please wait ⏱️")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
