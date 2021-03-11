@@ -3,7 +3,7 @@
 
 # MashaRobot
 Telegram Group Manager Bot
-![logo](https://telegra.ph/file/c1d41a751f7203826755e.mp4)
+![logo](https://telegra.ph/file/7a4e7f9227233952f47d2.jpg)
 
 ## How To Host
 The easiest way to deploy this Bot
