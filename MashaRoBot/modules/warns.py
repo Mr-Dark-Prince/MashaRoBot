@@ -501,6 +501,7 @@ def __chat_settings__(chat_id, user_id):
 
 
 __help__ = """
+
  ❍ /warns <userhandle>*:* get a user's number, and reason, of warns.
  ❍ /warnlist*:* list of all current warning filters
 
@@ -513,6 +514,7 @@ be a sentence, encompass it with quotes, as such: `/addwarn "very angry" This is
  ❍ /nowarn <keyword>*:* stop a warning filter
  ❍ /warnlimit <num>*:* set the warning limit
  ❍ /strongwarn <on/yes/off/no>*:* If set to on, exceeding the warn limit will result in a ban. Else, will just punch.
+
 """
 
 __mod_name__ = "WARNS"
