@@ -450,10 +450,10 @@ def makepack_internal(
 
 
 __help__ = """
-• `/stickerid`*:* reply to a sticker to me to tell you its file ID.
-• `/getsticker`*:* reply to a sticker to me to upload its raw PNG file.
-• `/kang`*:* reply to a sticker to add it to your pack.
-• `/stickers`*:* Find stickers for given term on combot sticker catalogue
+ ❍ /stickerid*:* reply to a sticker to me to tell you its file ID.
+ ❍ /getsticker*:* reply to a sticker to me to upload its raw PNG file.
+ ❍ /kang*:* reply to a sticker to add it to your pack.
+ ❍ /stickers*:* Find stickers for given term on combot sticker catalogue
 """
 
 __mod_name__ = "STICKERS"
