@@ -6,7 +6,6 @@ from MashaRoBot.pyrogramee.errors import capture_err
 
 
 __mod_name__ = "Github"
-__help__ = "Get information about a GitHub user.\n /github [username]"
 
 
 @pbot.on_message(filters.command('github'))
