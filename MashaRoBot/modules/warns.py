@@ -501,7 +501,7 @@ def __chat_settings__(chat_id, user_id):
 
 
 __help__ = """
-
+*Warning*
  ❍ /warns <userhandle>*:* get a user's number, and reason, of warns.
  ❍ /warnlist*:* list of all current warning filters
 
