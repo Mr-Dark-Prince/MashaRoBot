@@ -352,7 +352,7 @@ def Masha_about_callback(update, context):
     query = update.callback_query
     if query.data == "masha_":
         query.message.edit_text(
-            text=""" [ℹ️](https://telegra.ph/file/6937614341f42020a2ebc.jpg))*Masha* is a bot for managing your group with additional features.
+            text=""" [ℹ️](https://telegra.ph/file/6937614341f42020a2ebc.jpg) *Masha* is a bot for managing your group with additional features.
                  \n\n_Masha's licensed under the GNU General Public License v3.0_
                  \nHere is the [💾Repository](https://github.com/Mr-Dark-Prince/MashaRoBot).
                  \n\nIf you have any question about Masha, let us know at @WasteBots.""",
