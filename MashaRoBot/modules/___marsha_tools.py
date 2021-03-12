@@ -1,6 +1,6 @@
 # © @Mr_Dark_Prince
 
-__mod_name__ = "❍ MASHA TOOLS BOX ❍"
+__mod_name__ = "MASHAROBOT SPECIAL BOX"
 
 __help__ = """
  ❍ /song [song name] :uploads the song in it's best quality available
