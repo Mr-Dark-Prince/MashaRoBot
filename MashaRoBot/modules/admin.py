@@ -634,9 +634,14 @@ __help__ = """
  ❍ /pin*:* silently pins the message replied to - add `'loud'` or `'notify'` to give notifs to users
  ❍ /unpin*:* unpins the currently pinned message
  ❍ /invitelink*:* gets invitelink
- ❍ /promote*:* promotes the user replied to
- ❍ /demote*:* demotes the user replied to
+ ❍ /promote*:* promotes the user
+ ❍ /demote*:* demotes the user
  ❍ /title <title here>*:* sets a custom title for an admin that the bot promoted
+ ❍ /setgtitle <newtitle>: Sets new chat title in your group.
+ ❍ /setgpic: As a reply to file or photo to set group profile pic!
+ ❍ /delgpic: Same as above but to remove group profile pic.
+ ❍ /setsticker: As a reply to some sticker to set it as group sticker set!
+ ❍ /setdescription: <description> Sets new chat description in group.
  ❍ /admincache*:* force refresh the admins list
  ❍ /antispam <on/off/yes/no>*:* Will toggle our antispam tech or return your current settings.
 """
