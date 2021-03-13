@@ -40,7 +40,7 @@ OFFICERS = [OWNER_ID] + DEV_USERS + DRAGONS + DEMONS
 # Check if user has admin rights
 async def is_administrator(user_id: int, message):
     admin = False
-    async for user in client.iter_participants(
+    async for user in telethn.iter_participants(
         message.chat_id, filter=ChannelParticipantsAdmins
     ):
         if user_id == user.id or user_id in OFFICERS:
@@ -59,15 +59,15 @@ async def zombies(event):
     del_status = "No Deleted Accounts Found, Group Is Clean."
 
     if con != "clean":
-        find_zombies = await event.respond("Searching For Zombies...")
+        find_zombies = await event.respond("Searching For Zombies...👻")
         async for user in event.client.iter_participants(event.chat_id):
 
             if user.deleted:
                 del_u += 1
                 await sleep(1)
         if del_u > 0:
-            del_status = f"Found **{del_u}** Zombies In This Group.\
-            \nClean Them By Using - `/zombies clean`"
+            del_status = f"Found **{del_u}** Zombies 👻😩 In This Group.\
+            \nClean Them By Using 👉 `/zombies clean`"
         await find_zombies.edit(del_status)
         return
 
@@ -82,10 +82,10 @@ async def zombies(event):
         return
 
     if not admin and not creator:
-        await event.respond("I Am Not An Admin Here!")
+        await event.respond("😒I Am Not An Admin Here!")
         return
 
-    cleaning_zombies = await event.respond("Cleaning Zombies...")
+    cleaning_zombies = await event.respond("Cleaning Zombies...😁")
     del_u = 0
     del_a = 0
 
