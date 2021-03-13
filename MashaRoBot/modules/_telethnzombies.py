@@ -1,11 +1,13 @@
+
+import asyncio
 from asyncio import sleep
 
 from telethon import events
 from telethon.errors import ChatAdminRequiredError, UserAdminInvalidError
 from telethon.tl.functions.channels import EditBannedRequest
-from telethon.tl.types import ChannelParticipantsAdmins, ChatBannedRights
+from telethon.tl.types import ChatBannedRights, ChannelParticipantsAdmins
 
-from MashaRoBot import DEMONS, DEV_USERS, DRAGONS, OWNER_ID, telethn
+from MashaRoBot import telethn, OWNER_ID, DEV_USERS, SUDO_USERS, SUPPORT_USERS
 
 # =================== CONSTANT ===================
 
@@ -33,18 +35,19 @@ UNBAN_RIGHTS = ChatBannedRights(
     embed_links=None,
 )
 
-OFFICERS = [OWNER_ID] + DEV_USERS + DRAGONS + DEMONS
+OFFICERS = [OWNER_ID] + DEV_USERS + SUDO_USERS + SUPPORT_USERS
 
 # Check if user has admin rights
 async def is_administrator(user_id: int, message):
     admin = False
-    async for user in telethn.iter_participants(
+    async for user in client.iter_participants(
         message.chat_id, filter=ChannelParticipantsAdmins
     ):
         if user_id == user.id or user_id in OFFICERS:
             admin = True
             break
     return admin
+
 
 
 @telethn.on(events.NewMessage(pattern=f"^[!/]zombies ?(.*)"))
@@ -109,3 +112,5 @@ async def zombies(event):
         \n`{del_a}` Zombie Admin Accounts Are Not Removed!"
 
     await cleaning_zombies.edit(del_status)
+
+    
