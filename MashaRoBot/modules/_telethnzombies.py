@@ -1,13 +1,11 @@
-
-import asyncio
 from asyncio import sleep
 
 from telethon import events
 from telethon.errors import ChatAdminRequiredError, UserAdminInvalidError
 from telethon.tl.functions.channels import EditBannedRequest
-from telethon.tl.types import ChatBannedRights, ChannelParticipantsAdmins
+from telethon.tl.types import ChannelParticipantsAdmins, ChatBannedRights
 
-from MashaRoBot import telethn, OWNER_ID, DEV_USERS, DRAGONS, DEMONS
+from MashaRoBot import DEMONS, DEV_USERS, DRAGONS, OWNER_ID, telethn
 
 # =================== CONSTANT ===================
 
@@ -49,7 +47,6 @@ async def is_administrator(user_id: int, message):
     return admin
 
 
-
 @telethn.on(events.NewMessage(pattern=f"^[!/]zombies ?(.*)"))
 async def zombies(event):
     """ For .zombies command, list all the zombies in a chat. """
@@ -59,15 +56,15 @@ async def zombies(event):
     del_status = "No Deleted Accounts Found, Group Is Clean."
 
     if con != "clean":
-        find_zombies = await event.respond("Searching For Zombies...👻")
+        find_zombies = await event.respond("Searching For Zombies...")
         async for user in event.client.iter_participants(event.chat_id):
 
             if user.deleted:
                 del_u += 1
                 await sleep(1)
         if del_u > 0:
-            del_status = f"Found **{del_u}** Zombies 👻😩 In This Group.\
-            \nClean Them By Using 👉 `/zombies clean`"
+            del_status = f"Found **{del_u}** Zombies In This Group.\
+            \nClean Them By Using - `/zombies clean`"
         await find_zombies.edit(del_status)
         return
 
@@ -82,10 +79,10 @@ async def zombies(event):
         return
 
     if not admin and not creator:
-        await event.respond("😒I Am Not An Admin Here!")
+        await event.respond("I Am Not An Admin Here!")
         return
 
-    cleaning_zombies = await event.respond("Cleaning Zombies...😁")
+    cleaning_zombies = await event.respond("Cleaning Zombies...")
     del_u = 0
     del_a = 0
 
@@ -112,5 +109,3 @@ async def zombies(event):
         \n`{del_a}` Zombie Admin Accounts Are Not Removed!"
 
     await cleaning_zombies.edit(del_status)
-
-    
