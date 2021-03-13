@@ -38,3 +38,5 @@ youtube-dl
 youtube_search
 requests
 asyncio
+dateparser==1.0.0
+pymongo==3.11.0
