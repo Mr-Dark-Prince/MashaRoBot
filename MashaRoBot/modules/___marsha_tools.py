@@ -7,4 +7,7 @@ __help__ = """
  💡Ex: `/song Faded Alan Walker`
 
  ❍ /github [username] :Get information about a GitHub user.
+
+ ❍ Masha [query] Masha answers the query
+  💡Ex `Masha where is India?`
 """
