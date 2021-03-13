@@ -3,7 +3,7 @@
     <a href="https://github.com/Mr-Dark-Prince/MashaRoBot"> <img src="https://img.shields.io/github/repo-size/Mr-Dark-Prince/MashaRoBot?color=red&logo=github&logoColor=green&style=for-the-badge" /></a>
     <a href="https://github.com/Mr-Dark-Prince/MashaRoBot/commits/prince"> <img src="https://img.shields.io/github/last-commit/Mr-Dark-Prince/MashaRoBot?color=blue&logo=github&logoColor=green&style=for-the-badge" /></a>
     <a href="https://github.com/Mr-Dark-Prince/MashaRoBot/issues"> <img src="https://img.shields.io/github/issues/Mr-Dark-Prince/MashaRoBot?color=blueviolet&logo=github&logoColor=green&style=for-the-badge" /></a>
-    <a href="https://github.com/Mr-Dark-Prince/MashaRoBot/network/members"> <img src="https://img.shields.io/github/forks/Mr-Dark-Prince/MashaRoBot?color=cyan&logo=github&logoColor=green&style=for-the-badge" /></a>  
+    <a href="https://github.com/Mr-Dark-Prince/MashaRoBot/network/members"> <img src="https://img.shields.io/github/forks/Mr-Dark-Prince/MashaRoBot?color=purple&logo=github&logoColor=green&style=for-the-badge" /></a>  
     <a href="https://pypi.org/project/Telethon/"> <img src="https://img.shields.io/pypi/v/telethon?color=yellow&label=telethon&logo=python&logoColor=green&style=for-the-badge" /></a>
 </p>
 
