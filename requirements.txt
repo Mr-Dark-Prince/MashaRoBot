@@ -43,5 +43,5 @@ pymongo==3.11.0
 dnspython
 secureme
 apscheduler
-flag
+emoji-country-flag
 countryinfo
