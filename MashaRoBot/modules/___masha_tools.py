@@ -8,8 +8,10 @@ __help__ = """
 
  ❍ /github [username] :Get information about a GitHub user.
 
- ❍ Masha [query] Masha answers the query
-  💡Ex `Masha where is India?`
+ ❍ /country [country name] :Gathering info about given country
+
+ ❍ Masha [query] :Masha answers the query
+  💡Ex: `Masha where is India?`
 
  ❍ /encrypt: Encrypts The Given Text
  ❍ /decrypt: Decrypts Previously Ecrypted Text
