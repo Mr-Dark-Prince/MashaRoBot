@@ -46,3 +46,4 @@ apscheduler
 emoji-country-flag
 countryinfo
 gitpython
+heroku3
