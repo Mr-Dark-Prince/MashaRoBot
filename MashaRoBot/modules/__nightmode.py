@@ -3,7 +3,7 @@ from telethon.tl.types import ChatBannedRights
 from apscheduler.schedulers.asyncio import AsyncIOScheduler 
 from telethon import functions
 from MashaRoBot.events import register
-from Luna import telethn as tbot
+from MashaRoBot import telethn as tbot
 import os
 
 hehes = ChatBannedRights(
