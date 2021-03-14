@@ -44,3 +44,4 @@ dnspython
 secureme
 apscheduler
 flag
+countryinfo
