@@ -45,3 +45,4 @@ secureme
 apscheduler
 emoji-country-flag
 countryinfo
+gitpython
