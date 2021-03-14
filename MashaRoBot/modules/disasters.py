@@ -634,6 +634,11 @@ Group admins/group owners do not need these commands.
  ╠ /gignoreblue <word>*:* globally ignorea bluetext cleaning of saved word across MashaRoBot.
  ╚ /ungignoreblue <word>*:* remove said command from global cleaning list
 
+ ╔ *Core*
+ ╠  Owner only
+ ╠ /send <module name>*:* Send module
+ ╚ /install <reply to a .py>*:* Install module 
+
 Visit @{SUPPORT_CHAT} for more information.
 """
 
