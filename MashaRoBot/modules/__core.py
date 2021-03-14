@@ -9,7 +9,7 @@ from MashaRoBot import OWNER_ID
 from MashaRoBot import TEMP_DOWNLOAD_DIRECTORY as path
 from MashaRoBot import TEMP_DOWNLOAD_DIRECTORY
 from datetime import datetime
-water = './MashaRoBot/resources/images.jpeg'
+water = './MashaRoBot/resources/masha.jpg'
 client = tbot
 
 @register(pattern=r"^/send ?(.*)")
