@@ -1,4 +1,5 @@
 import glob
+from pathlib import Path
 from telethon import events
 
 from MashaRoBot import telethn
