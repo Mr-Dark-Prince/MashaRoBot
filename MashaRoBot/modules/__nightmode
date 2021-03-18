@@ -6,6 +6,19 @@ from MashaRoBot.events import register
 from MashaRoBot import telethn as tbot
 import os
 
+
+async def is_register_admin(chat, user):
+    if isinstance(chat, (types.InputPeerChannel, types.InputChannel)):
+        return isinstance(
+            (
+                await tbot(functions.channels.GetParticipantRequest(chat, user))
+            ).participant,
+            (types.ChannelParticipantAdmin, types.ChannelParticipantCreator),
+        )
+    if isinstance(chat, types.InputPeerUser):
+        return True
+
+
 hehes = ChatBannedRights(
     until_date=None,
     send_messages=True,
@@ -35,6 +48,10 @@ openhehe = ChatBannedRights(
 
 @register(pattern="^/addnt")
 async def close_ws(event):
+    if event.is_group:
+        if await is_register_admin(event.input_chat, event.message.sender_id):
+            pass
+
     if not event.is_group:
         await event.reply("You Can Only Enable Night Mode in Groups.")
         return
