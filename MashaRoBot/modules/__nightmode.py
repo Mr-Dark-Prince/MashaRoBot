@@ -2,6 +2,7 @@ from MashaRoBot.modules.sql_extended.night_mode_sql import add_nightmode, rmnigh
 from telethon.tl.types import ChatBannedRights
 from apscheduler.schedulers.asyncio import AsyncIOScheduler 
 from telethon import functions
+from telethon import types
 from MashaRoBot.events import register
 from MashaRoBot import telethn as tbot
 import os
