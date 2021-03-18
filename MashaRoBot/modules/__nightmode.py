@@ -9,14 +9,22 @@ import os
 
 async def is_register_admin(chat, user):
     if isinstance(chat, (types.InputPeerChannel, types.InputChannel)):
+
         return isinstance(
-            (
-                await tbot(functions.channels.GetParticipantRequest(chat, user))
-            ).participant,
-            (types.ChannelParticipantAdmin, types.ChannelParticipantCreator),
+            (await telethn(functions.channels.GetParticipantRequest(chat, user))).participant,
+            (types.ChannelParticipantAdmin, types.ChannelParticipantCreator)
         )
-    if isinstance(chat, types.InputPeerUser):
-        return True
+    elif isinstance(chat, types.InputPeerChat):
+
+        ui = await telethn.get_peer_id(user)
+        ps = (await telethn(functions.messages.GetFullChatRequest(chat.chat_id))) \
+            .full_chat.participants.participants
+        return isinstance(
+            next((p for p in ps if p.user_id == ui), None),
+            (types.ChatParticipantAdmin, types.ChatParticipantCreator)
+        )
+    else:
+        return None
 
 
 hehes = ChatBannedRights(
@@ -49,8 +57,9 @@ openhehe = ChatBannedRights(
 @register(pattern="^/addnt")
 async def close_ws(event):
     if event.is_group:
-        if await is_register_admin(event.input_chat, event.message.sender_id):
-            pass
+     if not (await is_register_admin(event.input_chat, event.message.sender_id)):
+       await event.reply("⚠️Hai.. You are not admin..You can't use this command..")
+       return
 
     if not event.is_group:
         await event.reply("You Can Only Enable Night Mode in Groups.")
