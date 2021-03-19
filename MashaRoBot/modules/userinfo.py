@@ -32,7 +32,7 @@ from MashaRoBot.modules.sql.afk_sql import is_afk, check_afk_status
 from MashaRoBot.modules.sql.users_sql import get_user_num_chats
 from MashaRoBot.modules.helper_funcs.chat_status import sudo_plus
 from MashaRoBot.modules.helper_funcs.extraction import extract_user
-from MashaRoBot import telethn as SaitamaTelethonClient, TIGERS, DRAGONS, DEMONS
+from MashaRoBot import telethn as MashaTelethonClient, TIGERS, DRAGONS, DEMONS
 
 
 def no_by_per(totalhp, percentage):
@@ -160,7 +160,7 @@ def get_id(update: Update, context: CallbackContext):
             )
 
 
-@SaitamaTelethonClient.on(
+@MashaTelethonClient.on(
     events.NewMessage(
         pattern="/ginfo ", from_users=(TIGERS or []) + (DRAGONS or []) + (DEMONS or [])
     )
