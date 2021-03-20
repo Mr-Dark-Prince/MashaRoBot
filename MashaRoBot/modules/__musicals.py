@@ -1,4 +1,4 @@
-__mod_name__ = "◾️MUSICAL"
+__mod_name__ = "▪MUSICAL"
 
 __help__ = """
  ❍ /song [song name] :Uploads the song in it's best quality available
