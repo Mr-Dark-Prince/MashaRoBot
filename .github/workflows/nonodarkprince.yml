@@ -8,8 +8,8 @@ jobs:
       - name: Find and Replace
         uses: jacobtomlinson/gha-find-replace@master
         with:
-          find: "Luna"
-          replace: "Masha"
+          find: "I am now online!"
+          replace: "Yes I'm alive 😹"
       - name: Pull All Updates
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
