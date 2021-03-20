@@ -49,4 +49,3 @@ html2text
 bs4
 bing_image_downloader
 search_engine_parser
-selenium
