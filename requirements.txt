@@ -45,6 +45,7 @@ secureme
 apscheduler
 emoji-country-flag
 countryinfo
+html2text
 bs4
 bing_image_downloader
 search_engine_parser
