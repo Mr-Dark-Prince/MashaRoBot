@@ -599,11 +599,11 @@ Group admins/group owners do not need these commands.
  ❍ /unload modulename*:* Loads the said module frommemory without restarting memory without restarting the bot 
 
 *Remote commands:*
- ❍ /rban user group*:* Remote ban
- ❍ /runban user group*:* Remote un-ban
- ❍ /rpunch user group*:* Remote punch
- ❍ /rmute user group*:* Remote mute
- ❍ /runmute user group*:* Remote un-mute
+ ❍ /rban*:* user group*:* Remote ban
+ ❍ /runban*:* user group*:* Remote un-ban
+ ❍ /rpunch*:* user group*:* Remote punch
+ ❍ /rmute*:* user group*:* Remote mute
+ ❍ /runmute*:* user group*:* Remote un-mute
 
 *Windows self hosted only:*
  ❍ /reboot*:* Restarts the bots service
@@ -627,15 +627,16 @@ Group admins/group owners do not need these commands.
  ❍ /ungban*:* Ungbans the user, same usage as gban
  ❍ /gbanlist*:* Outputs a list of gbanned users
 
- ╔ *Global Blue Text*
- ╠ /gignoreblue <word>*:* globally ignorea bluetext cleaning of saved word across MashaRoBot.
- ╚ /ungignoreblue <word>*:* remove said command from global cleaning list
+*Global Blue Text*
+ ❍ /gignoreblue*:* <word>*:* globally ignorea bluetext cleaning of saved word across MashaRoBot.
+ ❍ /ungignoreblue*:* <word>*:* remove said command from global cleaning list
 
- ╔ *Core*
- ╠  Owner only
- ╠ /send <module name>*:* Send module
- ╚ /install <reply to a .py>*:* Install module 
+*Core*
+*Owner only*
+ ❍ /send*:* <module name>*:* Send module
+ ❍ /install*:* <reply to a .py>*:* Install module 
 
+`⚠️ Read from top`
 Visit @{SUPPORT_CHAT} for more information.
 """
 
