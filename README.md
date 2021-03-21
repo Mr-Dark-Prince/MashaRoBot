@@ -10,6 +10,8 @@
     <a href="https://pypi.org/project/Telethon/"> <img src="https://img.shields.io/pypi/v/telethon?color=yellow&label=telethon&logo=python&logoColor=green&style=for-the-badge" /></a>
 </p>
 
+<iframe src="https://giphy.com/embed/aF5qD7uVO6mAw" width="480" height="267" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/masha-aF5qD7uVO6mAw">via GIPHY</a></p>
+
 # MashaRobot
 Me On Telegram [✨MASHA✨](https://t.me/MashaRoBot)
 ![logo](https://telegra.ph/file/6937614341f42020a2ebc.jpg)
