@@ -16,7 +16,6 @@
 
 # MashaRobot
 Me On Telegram [✨MASHA✨](https://t.me/MashaRoBot)
-![logo](https://telegra.ph/file/6937614341f42020a2ebc.jpg)
 
 ## How To Host
 The easiest way to deploy this Bot
