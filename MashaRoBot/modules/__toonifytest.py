@@ -1,8 +1,10 @@
 from telethon.tl.types import MessageMediaPhoto
 import os, urllib, requests, asyncio
 from MashaRoBot import telethn as borg
+from MashaRoBot.events import register
 MASHA = "quickstart-QUdJIGlzIGNvbWluZy4uLi4K"
-@borg.on(pattern="/toonify")
+
+@register(pattern="^/toonify (.*)")
 async def _(event):
     
                
