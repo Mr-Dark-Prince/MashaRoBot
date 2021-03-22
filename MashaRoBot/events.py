@@ -2,6 +2,7 @@ import inspect
 import glob
 import logging
 import sys
+import re
 
 from pathlib import Path
 from telethon import events
