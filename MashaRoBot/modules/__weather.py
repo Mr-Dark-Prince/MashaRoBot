@@ -77,17 +77,7 @@ async def _(event):
 async def _(event):
     if event.fwd_from:
         return
-    approved_userss = approved_users.find({})
-    for ch in approved_userss:
-        iid = ch["id"]
-        userss = ch["user"]
-    if event.is_group:
-        if await is_register_admin(event.input_chat, event.message.sender_id):
-            pass
-        elif event.chat_id == iid and event.sender_id == userss:
-            pass
-        else:
-            return
+
     sample_url = "https://wttr.in/{}.png"
     # logger.info(sample_url)
     input_str = event.pattern_match.group(1)
