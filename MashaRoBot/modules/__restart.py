@@ -14,7 +14,7 @@ async def _(event):
     if event.fwd_from:
         return
     if event.sender_id == OWNER_ID:
-    await event.edit("**🤓Masha Restarted**")
+    await event.reply("**🤓Masha Restarted**")
         pass
     else:
         return
