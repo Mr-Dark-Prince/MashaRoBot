@@ -13,7 +13,6 @@ _Admins only:_
  ❍ /rmchat*:* Disables Chatbot mode in the chat.
 
 *Date-time-Weather*
-__help__ = """
  ❍ /time <country code>*:* Gives information about a timezone.
  ❍ /weather <city>*:* Get weather info in a particular place.
  ❍ /wttr <city>*:* Advanced weather module, usage same as /weather
