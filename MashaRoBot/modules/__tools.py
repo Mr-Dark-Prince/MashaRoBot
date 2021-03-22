@@ -3,7 +3,7 @@
 __mod_name__ = "◎TOOLS"
 
 __help__ = """
-*TELEGRAPH*
+*Telegraph*
  ❍ /tm :Get Telegraph Link Of Replied Media
  ❍ /tt :Get Telegraph Link of Replied Text
 
@@ -12,7 +12,14 @@ _Admins only:_
  ❍ /addchat*:* Enables Chatbot mode in the chat.
  ❍ /rmchat*:* Disables Chatbot mode in the chat.
 
-*OTHERS*
+*Date-time-Weather*
+__help__ = """
+ ❍ /time <country code>*:* Gives information about a timezone.
+ ❍ /weather <city>*:* Get weather info in a particular place.
+ ❍ /wttr <city>*:* Advanced weather module, usage same as /weather
+ ❍ /wttr moon*:* Get the current status of moon
+
+*Other*
  ❍ /encrypt :Encrypts The Given Text
  ❍ /decrypt :Decrypts Previously Ecrypted Text
 """
