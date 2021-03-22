@@ -14,11 +14,10 @@ async def _(event):
     if event.fwd_from:
         return
     if event.sender_id == OWNER_ID:
-    await event.reply("**🤓Masha Restarted**")
         pass
     else:
         return
-
+    await event.reply("**🤓Masha Restarted**")
     try:
         herokuHelper = HerokuHelper(HEROKU_APP_NAME, HEROKU_API_KEY)
         herokuHelper.restart()
