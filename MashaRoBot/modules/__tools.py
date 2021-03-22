@@ -19,6 +19,6 @@ _Admins only:_
  ❍ /wttr moon*:* Get the current status of moon
 
 *Other*
- ❍ /encrypt :Encrypts The Given Text
- ❍ /decrypt :Decrypts Previously Ecrypted Text
+ ❍ /encrypt*:* Encrypts The Given Text
+ ❍ /decrypt*:* Decrypts Previously Ecrypted Text
 """
