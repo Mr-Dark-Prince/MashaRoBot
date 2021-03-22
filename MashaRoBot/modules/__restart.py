@@ -9,15 +9,16 @@ from MashaRoBot.helper_extra.heroku_helpo import HerokuHelper
 from MashaRoBot import telethn as borg
 Heroku = heroku3.from_key(HEROKU_API_KEY)
 
-@register(pattern="^/restart$")
+@register(pattern="^/restart (.*)")
 async def _(event):
     if event.fwd_from:
         return
     if event.sender_id == OWNER_ID:
+    await event.edit("**🤓Masha Restarted**")
         pass
     else:
         return
-    await event.edit("**🤓Masha Restarted**")
+
     try:
         herokuHelper = HerokuHelper(HEROKU_APP_NAME, HEROKU_API_KEY)
         herokuHelper.restart()
