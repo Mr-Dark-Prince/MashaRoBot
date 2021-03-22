@@ -1,6 +1,6 @@
 import os
 import sys
-from MashaRoBot.function.heroku_helper import HerokuHelper
+from MashaRoBot.helper_extra.heroku_helpo import HerokuHelper
 import heroku3
 import requests
 from MashaRoBot.events import register
