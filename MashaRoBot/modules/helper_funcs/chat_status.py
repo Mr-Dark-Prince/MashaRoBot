@@ -200,7 +200,7 @@ def user_admin(func):
                 pass
         else:
             update.effective_message.reply_text(
-                "Who dis non-admin telling me what to do? You want a punch?"
+                "You are missing the following rights to use this command!"
             )
 
     return is_admin
