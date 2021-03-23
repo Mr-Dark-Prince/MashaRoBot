@@ -11,6 +11,7 @@ from MashaRoBot.modules.helper_funcs.chat_status import (
     is_user_admin,
     user_admin,
     user_admin_no_reply,
+    user_can_ban,
     can_delete,
 )
 from MashaRoBot.modules.helper_funcs.extraction import (
@@ -154,6 +155,8 @@ def warn(
         else:
             raise
     return log_reason
+
+if user_can_ban(chat, user, context.bot.id) == False: message.reply_text( "You don't have enough rights to warn!" ) return ""
 
 
 @run_async
