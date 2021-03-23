@@ -74,14 +74,14 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`Hellow` [🤗](https://telegra.ph/file/6937614341f42020a2ebc.jpg) `My name is` *Masha*
+`Hellow` [🤗](https://telegra.ph/file/754a36d8c2e2b01f2a3a9.png) `My name is` *Alita*
 `I'm here to help you manage your groups! Hit` *📚Commands* `button below to find out more about how to use me to my full potential.` 
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ ADD MASHA TO YOUR GROUP ➕️", url="t.me/MashaRoBot?startgroup=true"),
+            text="➕️ ADD ALITA TO YOUR GROUP ➕️", url="t.me/AlitaRobot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="ℹ️ ABOUT", callback_data="masha_"),
@@ -91,23 +91,23 @@ buttons = [
         InlineKeyboardButton(
             text="💾 SOURCE", callback_data="source_"),
         InlineKeyboardButton(
-            text="👥 SUPPORT", url="https://t.me/wastebots"
+            text="👥 SUPPORT", url="https://t.me/AlitaSupport"
         ),
     ],
 ]
 
 
 HELP_STRINGS = """
-`Hi.. I'm` [MASHA🙋‍♀️](https://telegra.ph/file/6937614341f42020a2ebc.jpg)
+`Hi.. I'm` [Alita🙋‍♀️](https://telegra.ph/file/754a36d8c2e2b01f2a3a9.png)
 `Click on the buttons below to get documentation about specific modules..`"""
 
 
-MASHA_IMG = "https://telegra.ph/file/6937614341f42020a2ebc.jpg"
+MASHA_IMG = "https://telegra.ph/file/754a36d8c2e2b01f2a3a9.png"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project via [Paypal](ko-fi.com/sawada) or by contacting @Sawada \
+ You can support the project via [Telegram](t.me/Eviral) or by contacting @Eviral \
  Supporting isnt always financial! \
- Those who cannot provide monetary support are welcome to help us develop the bot at @OnePunchDev."""
+ Those who cannot provide monetary support are welcome to help us develop the bot at @AlitaDevs."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -352,7 +352,7 @@ def Masha_about_callback(update, context):
     query = update.callback_query
     if query.data == "masha_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *MASHA*, a powerful group management bot built to help you manage your group easily.
+            text=""" ℹ️ I'm *Alita*, a powerful group management bot built to help you manage your group easily.
                  \n❍ I can restrict users.
                  \n❍ I can greet users with customizable welcome messages and even set a group's rules.
                  \n❍ I have an advanced anti-flood system.
@@ -360,8 +360,8 @@ def Masha_about_callback(update, context):
                  \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n❍ I check for admins' permissions before executing any command and more stuffs
                  \n\n_Masha's licensed under the GNU General Public License v3.0_
-                 \nHere is the [💾Repository](https://github.com/Mr-Dark-Prince/MashaRoBot).
-                 \n\nIf you have any question about Masha, let us know at @WasteBots.""",
+                 \nHere is the [💾Repository](https://github.com/TeamEviral/MashaRoBot).
+                 \n\nIf you have any question about Masha, let us know at @AlitaSupport.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -387,8 +387,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *MASHA*
-                 \nHere is the [Source Code](https://github.com/Mr-Dark-Prince/MashaRoBot) .""",
+            text=""" Hi..🤗 I'm *Alita*
+                 \nHere is the [Source Code](https://github.com/TeamEviral/MashaRoBot) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
