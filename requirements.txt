@@ -26,8 +26,6 @@ coffeehouse==2.2.4
 regex
 bleach
 git+https://github.com/starry69/python-markdown2.git
-cloudmersive_virus_api_client
-cloudmersive_ocr_api_client
 wikipedia
 telethon
 telegraph
