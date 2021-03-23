@@ -67,6 +67,9 @@ def warn(
                 "Tiger triggered an auto warn filter!\n I can't warn tigers but they should avoid abusing this."
             )
         return
+    
+   if user_can_ban(chat, user, context.bot.id) == False: message.reply_text( "You don't have enough rights to warn!" ) return
+
 
     if user.id in WOLVES:
         if warner:
@@ -155,9 +158,6 @@ def warn(
         else:
             raise
     return log_reason
-
-if user_can_ban(chat, user, context.bot.id) == False: message.reply_text( "You don't have enough rights to warn!" ) return ""
-
 
 @run_async
 @user_admin_no_reply
