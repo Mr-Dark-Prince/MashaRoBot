@@ -350,7 +350,7 @@ def help_button(update, context):
 @run_async
 def Masha_about_callback(update, context):
     query = update.callback_query
-    if query.data == "masha_":
+    if query.data is "masha_":
         query.message.edit_text(
             text=""" ℹ️ I'm *MASHA*, a powerful group management bot built to help you manage your group easily.
                  \n❍ I can restrict users.
@@ -372,7 +372,7 @@ def Masha_about_callback(update, context):
                 ]
             ),
         )
-    elif query.data == "masha_back":
+    elif query.data is "masha_back":
         query.message.edit_text(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
