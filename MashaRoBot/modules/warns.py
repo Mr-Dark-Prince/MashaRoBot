@@ -5,12 +5,12 @@ from typing import Optional
 import telegram
 from MashaRoBot import TIGERS, WOLVES, dispatcher
 from MashaRoBot.modules.disable import DisableAbleCommandHandler
-from MashaRoBot.helper_extra.admin_rights import user_can_ban
 from MashaRoBot.modules.helper_funcs.chat_status import (
     bot_admin,
     can_restrict,
     is_user_admin,
     user_admin,
+    user_can_ban,
     user_admin_no_reply,
     can_delete,
 )
@@ -67,10 +67,6 @@ def warn(
                 "Tiger triggered an auto warn filter!\n I can't warn tigers but they should avoid abusing this."
             )
         return
-
-    if user_can_ban(chat user.id)
-       message.reply.text("You don't have enough rights to do this")
-       return
 
     if user.id in WOLVES:
         if warner:
@@ -196,6 +192,7 @@ def button(update: Update, context: CallbackContext) -> str:
 @run_async
 @user_admin
 @can_restrict
+@user_can_ban
 @loggable
 def warn_user(update: Update, context: CallbackContext) -> str:
     args = context.args
