@@ -193,7 +193,6 @@ def button(update: Update, context: CallbackContext) -> str:
 @user_admin
 @can_restrict
 @loggable
-@user_can_ban
 def warn_user(update: Update, context: CallbackContext) -> str:
     args = context.args
     message: Optional[Message] = update.effective_message
@@ -220,8 +219,6 @@ def warn_user(update: Update, context: CallbackContext) -> str:
     else:
         message.reply_text("That looks like an invalid User ID to me.")
     return ""
-if user_can_ban(chat, user, context.bot.id) == False: message.reply_text( "You don't have enough rights to warn!" ) return ""
-
 
 @run_async
 @user_admin
