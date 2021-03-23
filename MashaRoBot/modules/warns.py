@@ -191,6 +191,7 @@ def button(update: Update, context: CallbackContext) -> str:
 
 @run_async
 @user_admin
+@user_can_ban
 @can_restrict
 @loggable
 def warn_user(update: Update, context: CallbackContext) -> str:
