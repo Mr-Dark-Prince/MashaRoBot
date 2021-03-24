@@ -27,6 +27,4 @@ CREDITS
 💚Saitama = @Sawada
 🧡Julia = Ayush
 💙Legendbots
-
-
 ```
