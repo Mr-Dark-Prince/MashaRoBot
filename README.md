@@ -23,7 +23,10 @@ The easiest way to deploy this Bot
  
 CREDITS
 ```
-❤️Merie = @SonOfLars | 💚Saitama = @Sawada | 🧡Julia = Ayush | 🧡Legendbots
+❤️Merie = @SonOfLars
+💚Saitama = @Sawada
+🧡Julia = Ayush
+💙Legendbots
 
 
 ```
