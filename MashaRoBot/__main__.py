@@ -84,6 +84,10 @@ buttons = [
             text="➕️ ADD MASHA TO YOUR GROUP ➕️", url="t.me/MashaRoBot?startgroup=true"),
     ],
     [
+        InlineKeyboardButton(text="🚨ADMIN", callback_data="adminmenu_"),
+        InlineKeyboardButton(text="upcoming", callback_data="help_back"),
+    ],
+    [
         InlineKeyboardButton(text="ℹ️ ABOUT", callback_data="masha_"),
         InlineKeyboardButton(text="📚 COMMANDS", callback_data="help_back"),
     ],
@@ -379,6 +383,35 @@ def Masha_about_callback(update: Update, context: CallbackContext):
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
                 disable_web_page_preview=False,
+        )
+
+
+@run_async
+def Admin_about_callback(update, context):
+    query = update.callback_query
+    if query.data == "adminmenu_":
+        query.message.edit_text(
+            text=f"ADMIN MODULES",
+            parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton(
+                            text="ℹ️GROUP", callback_data="group_cmds"
+                        ),
+                        InlineKeyboardButton(
+                            text="BASIC", callback_data="basic_cmds"
+                        ),
+                    ],
+                    [
+                        InlineKeyboardButton(
+                            text="❔Help & Commands", callback_data="help_back"
+                        )
+                    ],
+                    [InlineKeyboardButton(text="Back", callback_data="masha_back")],
+                ]
+            ),
         )
 
 
@@ -702,6 +735,7 @@ def main():
 
     about_callback_handler = CallbackQueryHandler(Masha_about_callback, pattern=r"masha_")
     source_callback_handler = CallbackQueryHandler(Source_about_callback, pattern=r"source_")
+    admin_callback_handler = CallbackQueryHandler(Admin_about_callback, pattern=r"adminmenu_")
 
     donate_handler = CommandHandler("donate", donate)
     migrate_handler = MessageHandler(Filters.status_update.migrate, migrate_chats)
@@ -711,6 +745,7 @@ def main():
     dispatcher.add_handler(help_handler)
     dispatcher.add_handler(about_callback_handler)
     dispatcher.add_handler(source_callback_handler)
+    dispatcher.add_handler(admin_callback_handler)
     dispatcher.add_handler(settings_handler)
     dispatcher.add_handler(help_callback_handler)
     dispatcher.add_handler(settings_callback_handler)
