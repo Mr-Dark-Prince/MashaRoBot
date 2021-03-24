@@ -84,8 +84,9 @@ buttons = [
             text="➕️ ADD MASHA TO YOUR GROUP ➕️", url="t.me/MashaRoBot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="🚨ADMIN", callback_data="adminmenu_"),
-        InlineKeyboardButton(text="🪴USER", callback_data="usermenu_"),
+        InlineKeyboardButton(text="🚨ADMINS", callback_data="adminmenu_"),
+        InlineKeyboardButton(text="👒USERS", callback_data="usermenu_"),
+        InlineKeyboardButton(text="🛡DEVS", callback_data="devmenu_"),
     ],
     [
         InlineKeyboardButton(text="ℹ️ ABOUT", callback_data="masha_"),
