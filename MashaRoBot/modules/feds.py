@@ -465,6 +465,12 @@ def fed_info(update: Update, context: CallbackContext):
     bot, args = context.bot, context.args
     chat = update.effective_chat
     user = update.effective_user
+    message = update.effective_message
+    if chat.type != "private":
+        update.effective_message.reply_text(
+            "Federations can only be created by privately messaging me."
+        )
+        return
     if args:
         fed_id = args[0]
         info = sql.get_fed_info(fed_id)
