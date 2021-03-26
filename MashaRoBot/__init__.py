@@ -90,7 +90,6 @@ if ENV:
     SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", None)
     SPAMWATCH_SUPPORT_CHAT = os.environ.get("SPAMWATCH_SUPPORT_CHAT", None)
     SPAMWATCH_API = os.environ.get("SPAMWATCH_API", None)
-    TEMP_MAIL_KEY = os.environ.get("TEMP_MAIL_KEY", None)
 
     ALLOW_CHATS = os.environ.get("ALLOW_CHATS", True)
 
