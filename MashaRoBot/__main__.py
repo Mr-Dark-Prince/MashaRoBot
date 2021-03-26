@@ -84,11 +84,6 @@ buttons = [
             text="➕️ ADD MASHA TO YOUR GROUP ➕️", url="t.me/MashaRoBot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="🚨ADMINS", callback_data="adminmenu_"),
-        InlineKeyboardButton(text="👒USERS", callback_data="usermenu_"),
-        InlineKeyboardButton(text="🛡DEVS", callback_data="devmenu_"),
-    ],
-    [
         InlineKeyboardButton(text="ℹ️ ABOUT", callback_data="masha_"),
         InlineKeyboardButton(text="📚 COMMANDS", callback_data="help_back"),
     ],
@@ -358,15 +353,15 @@ def Masha_about_callback(update: Update, context: CallbackContext):
     if query.data == "masha_":
         query.message.edit_text(
             text=""" ℹ️ I'm *MASHA*, a powerful group management bot built to help you manage your group easily.
-                 \n❍ I can restrict users.
-                 \n❍ I can greet users with customizable welcome messages and even set a group's rules.
-                 \n❍ I have an advanced anti-flood system.
-                 \n❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
-                 \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
-                 \n❍ I check for admins' permissions before executing any command and more stuffs
-                 \n\n_Masha's licensed under the GNU General Public License v3.0_
-                 \nHere is the [💾Repository](https://github.com/Mr-Dark-Prince/MashaRoBot).
-                 \n\nIf you have any question about Masha, let us know at @WasteBots.""",
+                 ❍ I can restrict users.
+                 ❍ I can greet users with customizable welcome messages and even set a group's rules.
+                 ❍ I have an advanced anti-flood system.
+                 ❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
+                 ❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
+                 ❍ I check for admins' permissions before executing any command and more stuffs
+                 \n_Masha's licensed under the GNU General Public License v3.0_
+                 Here is the [💾Repository](https://github.com/Mr-Dark-Prince/MashaRoBot).
+                 If you have any question about Masha, let us know at @WasteBots.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -388,49 +383,6 @@ def Masha_about_callback(update: Update, context: CallbackContext):
 
 
 @run_async
-def Admin_about_callback(update, context):
-    query = update.callback_query
-    if query.data == "adminmenu_":
-        query.message.edit_text(
-            text=f"ADMIN MODULES",
-            parse_mode=ParseMode.MARKDOWN,
-            disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton(
-                            text="ℹ️GROUP", callback_data="group_cmds"
-                        ),
-                        InlineKeyboardButton(
-                            text="BASIC", callback_data="basic_cmds"
-                        ),
-                    ],
-                    [
-                        InlineKeyboardButton(
-                            text="❔Help & Commands", callback_data="help_back"
-                        )
-                    ],
-                    [InlineKeyboardButton(text="Back", callback_data="masha_back")],
-                ]
-            ),
-        )
-    elif query.data == "group_cmds":
-        query.message.edit_text(
-            text=f"<b> ｢ GROUP INFO 」</b>"
-            f"\n ❍ /title <title here>*:* sets a custom title for an admin that the bot promoted"
-            f" ❍ /setgtitle <newtitle>*:* Sets new chat title in your group."
-            f" ❍ /setgpic*:* As a reply to file or photo to set group profile pic"
-            f" ❍ /delgpic*:* Same as above but to remove group profile pic."
-            f" ❍ /setsticker*:* As a reply to some sticker to set it as group sticker set!"
-            f" ❍ /setdescription <description>*:* Sets new chat description in group.",
-            parse_mode=ParseMode.HTML,
-            reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Go Back", callback_data="masha_back")]]
-            ),
-        )
-
-
-@run_async
 def Source_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "source_":
@@ -438,7 +390,7 @@ def Source_about_callback(update: Update, context: CallbackContext):
             text=""" Hi..🤗 I'm *MASHA*
                  \nHere is the [Source Code](https://github.com/Mr-Dark-Prince/MashaRoBot) .""",
             parse_mode=ParseMode.MARKDOWN,
-            disable_web_page_preview=True,
+            disable_web_page_preview=False,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
