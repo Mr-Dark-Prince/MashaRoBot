@@ -98,7 +98,7 @@ buttons = [
 
 
 HELP_STRINGS = """
-*⬇️HELP BUTTONS HERE⬇️*"""
+*HELP BUTTONS HERE⤵*"""
 
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
