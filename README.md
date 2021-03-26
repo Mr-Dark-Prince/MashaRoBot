@@ -26,5 +26,7 @@ CREDITS
 ❤️Merie = @SonOfLars
 💚Saitama = @Sawada
 🧡Julia = Ayush
+💜Daisyx = @InukaASiTH
 💙Legendbots
+
 ```
