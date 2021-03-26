@@ -414,6 +414,20 @@ def Admin_about_callback(update, context):
                 ]
             ),
         )
+    elif query.data == "group_cmds":
+        query.message.edit_text(
+            text=f"<b> ｢ GROUP INFO 」</b>"
+            f"\n ❍ /title <title here>*:* sets a custom title for an admin that the bot promoted"
+            f" ❍ /setgtitle <newtitle>*:* Sets new chat title in your group."
+            f" ❍ /setgpic*:* As a reply to file or photo to set group profile pic"
+            f" ❍ /delgpic*:* Same as above but to remove group profile pic."
+            f" ❍ /setsticker*:* As a reply to some sticker to set it as group sticker set!"
+            f" ❍ /setdescription <description>*:* Sets new chat description in group.",
+            parse_mode=ParseMode.HTML,
+            reply_markup=InlineKeyboardMarkup(
+                [[InlineKeyboardButton(text="Go Back", callback_data="masha_back")]]
+            ),
+        )
 
 
 @run_async
