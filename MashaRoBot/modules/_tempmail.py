@@ -20,11 +20,7 @@ from datetime import datetime
 from MashaRobot import *
 from MashaRobot.events import register
 from MashaRobot import MongoClient
-from telethon import *
-from telethon.tl import *
-from telethon.tl.types import *
 from telegraph import Telegraph
-import requests
 
 client = MongoClient(MONGO_DB_URI)
 db = client["missjuliarobot"]
