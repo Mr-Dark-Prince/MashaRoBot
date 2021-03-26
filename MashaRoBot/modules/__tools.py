@@ -1,13 +1,8 @@
 # © @Mr_Dark_Prince
 
-__mod_name__ = "◎TOOLS"
+__mod_name__ = "TOOLS"
 
 __help__ = """
-
-*Chatbot* 
-_Admins only:_
- ❍ /addchat*:* Enables Chatbot mode in the chat.
- ❍ /rmchat*:* Disables Chatbot mode in the chat.
 
 *Date-time-Weather*
  ❍ /time <country code>*:* Gives information about a timezone.
