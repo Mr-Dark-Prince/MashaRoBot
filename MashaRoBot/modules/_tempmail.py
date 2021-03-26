@@ -15,7 +15,7 @@
 
 
 from tempmail import TempMail
-import time, markdown, base64, os
+import time, os
 from datetime import datetime
 from MashaRobot import *
 from MashaRobot.events import register
