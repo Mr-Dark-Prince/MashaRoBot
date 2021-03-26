@@ -641,8 +641,6 @@ __help__ = """
  ❍ /antispam <on/off/yes/no>*:* Will toggle our antispam tech or return your current settings.
  ❍ /addnt*:* Adds Group to NightMode Chats
  ❍ /rmnt*:* Removes Group From NightMode Chats
- ❍ /addnsfw*:* Adds The Group to nsfw Watch List
- ❍ /rmnsfw*:* Removes The Group From nsfw Watch List
 
 *Note:* Night Mode chats get Automatically closed at 12 am(IST)
 and Automatically openned at 6 am(IST) To Prevent Night Spams.
