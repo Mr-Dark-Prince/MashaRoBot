@@ -505,6 +505,7 @@ Blacklist sticker is used to stop certain stickers. Whenever a sticker is sent, 
  ❍ /blstickermode <ban/tban/mute/tmute>*:* sets up a default action on what to do if users use blacklisted stickers
 Note:
  ❍ <sticker link> can be `https://t.me/addstickers/<sticker>` or just `<sticker>` or reply to the sticker message
+
 """
 
 __mod_name__ = "B STICK"
