@@ -19,7 +19,6 @@ from MashaRoBot.modules.disable import DisableAbleCommandHandler, DisableAbleReg
 from MashaRoBot.modules.helper_funcs.extraction import extract_user
 from MashaRoBot.modules.helper_funcs.filters import CustomFilters
 import MashaRoBot.modules.sql.users_sql as sql
-import MashaRoBot.modules.helper_funcs.cas_api as cas
 
 @run_async
 def info(bot: Bot, update: Update, args: List[str]):
