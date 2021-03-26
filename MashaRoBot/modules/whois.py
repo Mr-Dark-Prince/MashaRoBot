@@ -14,7 +14,6 @@ from telegram import ParseMode
 from telegram.ext import CommandHandler, run_async, Filters
 from telegram.utils.helpers import escape_markdown, mention_html
 from MashaRoBot.modules.helper_funcs.chat_status import user_admin, sudo_plus, is_user_admin
-from MashaRoBot import dispatcher, OWNER_ID, SUPPORT_USERS, DEV_USERS, WHITELIST_USERS
 from MashaRoBot.__main__ import STATS, USER_INFO, TOKEN
 from MashaRoBot.modules.disable import DisableAbleCommandHandler, DisableAbleRegexHandler
 from MashaRoBot.modules.helper_funcs.extraction import extract_user
