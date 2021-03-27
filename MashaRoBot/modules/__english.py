@@ -45,3 +45,49 @@ async def _(event):
 dictionary = PyDictionary()
 
 
+@register(pattern="^/define")
+async def _(event):
+    text = event.text[len("/define ") :]
+    word = f"{text}"
+    let = dictionary.meaning(word)
+    set = str(let)
+    jet = set.replace("{", "")
+    net = jet.replace("}", "")
+    got = net.replace("'", "")
+    await event.reply(got)
+
+
+@register(pattern="^/synonyms")
+async def _(event):
+    text = event.text[len("/synonyms ") :]
+    word = f"{text}"
+    let = dictionary.synonym(word)
+    set = str(let)
+    jet = set.replace("{", "")
+    net = jet.replace("}", "")
+    got = net.replace("'", "")
+    await event.reply(got)
+
+
+@register(pattern="^/antonyms")
+async def _(event):
+    text = message.text[len("/antonyms ") :]
+    word = f"{text}"
+    let = dictionary.antonym(word)
+    set = str(let)
+    jet = set.replace("{", "")
+    net = jet.replace("}", "")
+    got = net.replace("'", "")
+    await event.reply(got)
+
+
+
+__help__ = """
+ ❍ /define <i>text</i>: Type the word or expression you want to search\nFor example /define kill
+ ❍ /spell: while replying to a message, will reply with a grammar corrected version
+ ❍ /forbesify: Correct your punctuations better use the advanged spell module
+ ❍ /synonyms <i>word</i>: Find the synonyms of a word
+ ❍ /antonyms <i>word</i>: Find the antonyms of a word
+"""
+
+__mod_name__= "ENGLISH"
