@@ -2,7 +2,7 @@ import time
 import logging
 from MashaRoBot import pbot
 from pyrogram import Client, filters
-from MashaRoBot.pyrogramee import forceSubscribe_sql as sql
+from MashaRoBot.modules.sql_extended import forceSubscribe_sql as sql
 from pyrogram.types import ChatPermissions, InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant, UsernameNotOccupied, ChatAdminRequired, PeerIdInvalid
 
