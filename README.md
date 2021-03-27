@@ -27,6 +27,5 @@ CREDITS
 💚Saitama = @Sawada
 🧡Julia = Ayush
 💜Daisyx = @InukaASiTH
-💙Legendbots
 💛Skylee = SensiPeeps
 ```
