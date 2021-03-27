@@ -290,7 +290,7 @@ def help_button(update, context):
         if mod_match:
             module = mod_match.group(1)
             text = (
-                "『*Commands for* *{}*』:\n".format(
+                "「 *HELP FOR* *{}* 」:\n".format(
                     HELPABLE[module].__mod_name__
                 )
                 + HELPABLE[module].__help__
@@ -300,7 +300,7 @@ def help_button(update, context):
                 parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="↩️Go Back", callback_data="help_back")]]
+                    [[InlineKeyboardButton(text="「 GO BACK 」", callback_data="help_back")]]
                 ),
             )
 
