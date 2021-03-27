@@ -135,7 +135,7 @@ from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl.functions.messages import SendMediaRequest
 
 
-@register(pattern="^/makepy ?(.*)")
+@register(pattern="^/make ?(.*)")
 async def get(event):
     name = event.text[5:]
     if name is None:
