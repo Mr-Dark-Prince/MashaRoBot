@@ -1,5 +1,6 @@
 from sqlalchemy import Column, String, Numeric, Boolean
-from sql import SESSION, BASE
+from MashaRoBot.modules.sql import BASE, SESSION
+
 
 class forceSubscribe(BASE):
     __tablename__ = "forceSubscribe"
