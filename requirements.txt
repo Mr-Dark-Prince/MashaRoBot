@@ -2,6 +2,7 @@ future
 emoji
 lxml
 wget
+gtts
 beautifulsoup4
 requests==2.20.0
 python-telegram-bot==12.8
