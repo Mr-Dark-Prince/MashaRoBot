@@ -1,5 +1,6 @@
 <p align="center">
-    <a href="https://github.com/Mr-dark-prince/MashaRoBot/stargazers"><img src="https://img.shields.io/github/stars/Mr-dark-prince/MashaRoBot?label=Stars&style=flat-square&logo=github&color=F10070" alt="Stars" /></a>
+    <a href="https://github.com/Mr-dark-prince/MashaRoBot/network"><img src="https://img.shields.io/github/forks/Mr-dark-prince/MashaRoBot?style=for-the-badge" alt="GitHub forks" /></a>
+    <a href="https://github.com/Mr-dark-prince/MashaRoBot/stargazers"><img src="https://img.shields.io/github/stars/Mr-dark-prince/MashaRoBot?style=for-the-badge" alt="GitHub stars" /></a>
 </p>
 <p align="center">
     <a href="https://app.codacy.com/manual/Mr-Dark-Prince/MashaRoBot/dashboard"> <img src="https://img.shields.io/codacy/grade/4d58f2a402b54aed8a7d95f7add45a81?color=brightgreen&logo=codacy&logoColor=green&style=for-the-badge" alt="Codacy" /></a>
