@@ -1,5 +1,6 @@
 future
 emoji
+gtts
 lxml
 wget
 beautifulsoup4
