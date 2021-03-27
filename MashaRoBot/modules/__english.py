@@ -83,11 +83,10 @@ async def _(event):
 
 
 __help__ = """
- ❍ /define <i>text</i>: Type the word or expression you want to search\nFor example /define kill
- ❍ /spell: while replying to a message, will reply with a grammar corrected version
- ❍ /forbesify: Correct your punctuations better use the advanged spell module
- ❍ /synonyms <i>word</i>: Find the synonyms of a word
- ❍ /antonyms <i>word</i>: Find the antonyms of a word
+ ❍ /define <text>*:* Type the word or expression you want to search\nFor example /define kill
+ ❍ /spell*:* while replying to a message, will reply with a grammar corrected version
+ ❍ /synonyms <word>*:* Find the synonyms of a word
+ ❍ /antonyms <word>*:* Find the antonyms of a word
 """
 
 __mod_name__= "ENGLISH"
