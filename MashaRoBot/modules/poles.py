@@ -19,10 +19,8 @@ async def is_register_admin(chat, user):
 
 @register(pattern="^/poll (.*)")
 async def _(event):
-    approved_userss = approved_users.find({})
-    for ch in approved_userss:
-        iid = ch["id"]
-        userss = ch["user"]
+    if event.fwd_from:
+        return
     if event.is_group:
         if await is_register_admin(event.input_chat, event.message.sender_id):
             pass
