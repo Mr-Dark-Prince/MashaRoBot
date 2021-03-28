@@ -1,8 +1,8 @@
 import os
-from MashaRobot import tbot
+from MashaRoBot import tbot
 from telethon import *
 from telethon.tl import *
-from MashaRobot.events import register
+from MashaRoBot.events import register
 
 
 async def is_register_admin(chat, user):
