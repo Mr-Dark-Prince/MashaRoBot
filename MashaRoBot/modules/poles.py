@@ -1,34 +1,9 @@
-#    MissJuliaRobot (A Telegram Bot Project)
-#    Copyright (C) 2019-2021 Julia (https://t.me/MissJulia_Robot)
-
-#    This program is free software: you can redistribute it and/or modify
-#    it under the terms of the GNU Affero General Public License as published by
-#    the Free Software Foundation, in version 3 of the License.
-
-#    This program is distributed in the hope that it will be useful,
-#    but WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#    GNU Affero General Public License for more details.
-
-#    You should have received a copy of the GNU Affero General Public License
-#    along with this program.  If not, see < https://www.gnu.org/licenses/agpl-3.0.en.html/ >.
-
-
 from MashaRobot import CMD_HELP, BOT_ID
 import os
 from MashaRobot import tbot
 from telethon import *
 from telethon.tl import *
 from MashaRobot.events import register
-from pymongo import MongoClient
-from MashaRobot import MONGO_DB_URI
-
-client = MongoClient()
-client = MongoClient(MONGO_DB_URI)
-db = client["missjuliarobot"]
-approved_users = db.approve
-dbb = client["missjuliarobot"]
-poll_id = dbb.pollid
 
 
 async def is_register_admin(chat, user):
