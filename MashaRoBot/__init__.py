@@ -92,7 +92,6 @@ if ENV:
     SPAMWATCH_API = os.environ.get("SPAMWATCH_API", None)
     IBM_WATSON_CRED_URL = os.environ.get("IBM_WATSON_CRED_URL", None)
     IBM_WATSON_CRED_PASSWORD = os.environ.get("IBM_WATSON_CRED_PASSWORD", None)
-    BOT_ID = int(os.environ.get("BOT_ID", None))
 
     ALLOW_CHATS = os.environ.get("ALLOW_CHATS", True)
 
