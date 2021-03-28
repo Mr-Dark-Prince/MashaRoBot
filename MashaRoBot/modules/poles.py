@@ -1,5 +1,5 @@
 import os
-from MashaRoBot import tbot
+from MashaRoBot import telethn as tbot
 from telethon import *
 from telethon.tl import *
 from MashaRoBot.events import register
