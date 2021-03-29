@@ -22,8 +22,10 @@ This is just a demo bot.. Don't try to add to your group.. Create your own bot
 The easiest way to deploy this Bot
 <p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Mr-Dark-Prince/MashaRoBot"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
  
-CREDITS
-```
-⚠️ All credits goes to its respective owners
-⚠️ You can see credit in codes
-```
+## CREDITS
+
+💡 [Ayush](https://github.com/MissJuliaRobot/MissJuliaRobot)
+💡 [Inuka Asith](https://github.com/inukaasith)
+💡 [Legendx](https://github.com/LEGENDXOP)
+💡 [Amarnath](https://github.com/Amarnathcdj)
+💡 []
