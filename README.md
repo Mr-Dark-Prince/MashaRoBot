@@ -28,4 +28,4 @@ The easiest way to deploy this Bot
 💡 [Inuka Asith](https://github.com/inukaasith)
 💡 [Legendx](https://github.com/LEGENDXOP)
 💡 [Amarnath](https://github.com/Amarnathcdj)
-💡 []
+💡 [Thehamkercat](https://github.com/thehamkercat)
