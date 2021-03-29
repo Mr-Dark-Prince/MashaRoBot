@@ -24,10 +24,5 @@ The easiest way to deploy this Bot
  
 CREDITS
 ```
-❤️Merie = @SonOfLars
-💚Saitama = @Sawada
-🧡Julia = Ayush
-💜Daisyx = @InukaASiTH
-💛Skylee = SensiPeeps
-🖤Williambutcher = @TheHamkerCat
+⚠️ all credits goes to its respective owners
 ```
