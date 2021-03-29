@@ -1,3 +1,4 @@
+# credits @RoseLoverX
 from MashaRoBot import telethn as tbot
 from MashaRoBot.events import register
 import os
