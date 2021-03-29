@@ -44,7 +44,7 @@
          "value": ""
       },
       "BOT_ID": {
-         "description": "Your bot ID..",
+         "description": "Your bot ID.. Use any other bot to get it.",
          "required": true,
          "value": ""
       },
