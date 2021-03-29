@@ -1,6 +1,3 @@
-# 🙈 Give me ⭐️ before kanging code
-# © @Mr_Dark_Prince 🌚
-
 import requests
 url = "https://iamai.p.rapidapi.com/ask"
 from MashaRoBot import telethn, OWNER_ID
