@@ -24,8 +24,12 @@ The easiest way to deploy this Bot
  
 ## CREDITS
 
-💡 [Ayush](https://github.com/MissJuliaRobot/MissJuliaRobot)
-💡 [Inuka Asith](https://github.com/inukaasith)
-💡 [Legendx](https://github.com/LEGENDXOP)
-💡 [Amarnath](https://github.com/Amarnathcdj)
-💡 [Thehamkercat](https://github.com/thehamkercat)
+🍀 [PaulSonOfLars](https://github.com/PaulSonOfLars/tgbot)
+🍀 [Sawada](https://github.com/AnimeKaizoku)
+🍀 [Loli-Killer](https://github.com/Loli-Killer)
+🍀 []
+🍀 [Ayush](https://github.com/MissJuliaRobot/MissJuliaRobot)
+🍀 [Inuka Asith](https://github.com/inukaasith)
+🍀 [Legendx](https://github.com/LEGENDXOP)
+🍀 [Amarnath c](https://github.com/Amarnathcdj)
+🍀 [Thehamkercat](https://github.com/thehamkercat)
