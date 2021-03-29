@@ -1,8 +1,17 @@
-import os
-from MashaRoBot import telethn as tbot
+from pymongo import MongoClient
 from telethon import *
 from telethon.tl import *
+
+from MashaRoBot import BOT_ID, MONGO_DB_URI
+from MashaRoBot import telethn as tbot
 from MashaRoBot.events import register
+
+client = MongoClient()
+client = MongoClient(MONGO_DB_URI)
+db = client["darkuserbot"]
+approved_users = db.approve
+dbb = client["darkuserbot"]
+poll_id = dbb.pollid
 
 
 async def is_register_admin(chat, user):
@@ -13,14 +22,24 @@ async def is_register_admin(chat, user):
             ).participant,
             (types.ChannelParticipantAdmin, types.ChannelParticipantCreator),
         )
-    if isinstance(chat, types.InputPeerUser):
-        return True
+    if isinstance(chat, types.InputPeerChat):
+        ui = await tbot.get_peer_id(user)
+        ps = (
+            await tbot(functions.messages.GetFullChatRequest(chat.chat_id))
+        ).full_chat.participants.participants
+        return isinstance(
+            next((p for p in ps if p.user_id == ui), None),
+            (types.ChatParticipantAdmin, types.ChatParticipantCreator),
+        )
+    return None
 
 
 @register(pattern="^/poll (.*)")
 async def _(event):
-    if event.fwd_from:
-        return
+    approved_userss = approved_users.find({})
+    for ch in approved_userss:
+        iid = ch["id"]
+        userss = ch["user"]
     if event.is_group:
         if await is_register_admin(event.input_chat, event.message.sender_id):
             pass
@@ -375,19 +394,19 @@ async def stop(event):
 
 
 __help__ = """
-You can now send polls anonymously with Julia
+You can now send polls anonymously with Masha
 Here is how you can do it:
 **Parameters** -
- ▪️ poll-id - a poll id consists of an 5 digit random integer, this id is automatically removed from the system when you stop your previous poll
- ▪️ question - the question you wanna ask
- ▪️ <True@optionnumber/False>(1) - quiz mode, you must state the correct answer with `@` eg: `True@1` or `True@2`
- ▪️ <True/False>(2) - public votes
- ▪️ <True/False>(3) - multiple choice
+ ❍ poll-id - a poll id consists of an 5 digit random integer, this id is automatically removed from the system when you stop your previous poll
+ ❍ question - the question you wanna ask
+ ❍ <True@optionnumber/False>(1) - quiz mode, you must state the correct answer with `@` eg: `True@1` or `True@2`
+ ❍ <True/False>(2) - public votes
+ ❍ <True/False>(3) - multiple choice
 **Syntax** -
-`/poll <poll-id> <question> | <True@optionnumber/False> <True/False> <True/False> <option1> <option2> ... upto <option10>`
+❍ `/poll <poll-id> <question> | <True@optionnumber/False> <True/False> <True/False> <option1> <option2> ... upto <option10>`
 **Examples** -
-`/poll 12345 | am i cool? | False False False yes no`
-`/poll 12345 | am i cool? | True@1 False False yes no`
+❍ `/poll 12345 | am i cool? | False False False yes no`
+❍ `/poll 12345 | am i cool? | True@1 False False yes no`
 **To stop a poll**
 Reply to the poll with `/stoppoll <poll-id>` to stop the poll
 **NOTE**
@@ -395,4 +414,4 @@ If you have forgotten your poll id or deleted the poll so that you can't stop th
 """
 
 
-__mod_name__ = "POLLS"
+__mod_name__ = "POLLING"
