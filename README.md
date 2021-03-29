@@ -28,6 +28,7 @@ The easiest way to deploy this Bot
 ▪️ [Saitama](https://github.com/AnimeKaizoku)
 ▪️ [Loli-Killer](https://github.com/Loli-Killer)
 ▪️ [RealAkito](https://github.com/RealAkito)
+▪️ [MrYacha](https://github.com/MrYacha)
 ▪️ [Shreyansh](https://github.com/okay-retard)
 ▪️ [Ayush](https://github.com/MissJuliaRobot/MissJuliaRobot)
 ▪️ [Inuka Asith](https://github.com/inukaasith)
