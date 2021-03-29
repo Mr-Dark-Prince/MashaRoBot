@@ -422,7 +422,7 @@ def __chat_settings__(chat_id, user_id):
 @run_async
 @bot_admin
 @can_pin
-@user_can_pin
+@user_can_ban
 @user_admin
 @loggable
 def pin(update: Update, context: CallbackContext) -> str:
@@ -465,7 +465,6 @@ def pin(update: Update, context: CallbackContext) -> str:
 @run_async
 @bot_admin
 @can_pin
-@user_can_pin
 @user_admin
 @loggable
 def unpin(update: Update, context: CallbackContext) -> str:
