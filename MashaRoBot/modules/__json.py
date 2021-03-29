@@ -1,6 +1,6 @@
 import io
 from MashaRoBot.events import register
-from MashaRoBot import tbot as borg
+from MashaRoBot import telethn as borg
 from MashaRoBot import telethn as tbot
 from telethon import types
 from telethon import events
