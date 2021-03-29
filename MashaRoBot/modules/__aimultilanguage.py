@@ -1,3 +1,5 @@
+# credits @RoseLoverX @InukaASiTH
+# ported to masha @Mr_dark_prince
 from MashaRoBot import OWNER_ID, BOT_ID
 from MashaRoBot import telethn as tbot
 import MashaRoBot.modules.sql.aihelp_sql as sql
