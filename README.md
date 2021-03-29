@@ -34,3 +34,5 @@ The easiest way to deploy this Bot
 🖤 [Amarnath c](https://github.com/Amarnathcdj)
 🖤 [Thehamkercat](https://github.com/thehamkercat)
 🖤 [DragSama](https://github.com/DragSama)
+🖤 [Shrimadhav](https://github.com/SpEcHiDe)
+🖤 [Ayra Hikari](https://github.com/AyraHikari)
