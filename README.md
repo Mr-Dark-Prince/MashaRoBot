@@ -24,5 +24,6 @@ The easiest way to deploy this Bot
  
 CREDITS
 ```
-⚠️ all credits goes to its respective owners
+⚠️ All credits goes to its respective owners
+⚠️ You can see credit in codes
 ```
