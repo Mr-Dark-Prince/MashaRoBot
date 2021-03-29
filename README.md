@@ -24,13 +24,13 @@ The easiest way to deploy this Bot
  
 ## CREDITS
 
-🍀 [PaulSonOfLars](https://github.com/PaulSonOfLars/tgbot)
-🍀 [Saitama](https://github.com/AnimeKaizoku)
-🍀 [Loli-Killer](https://github.com/Loli-Killer)
-🍀 [Shreyansh](https://github.com/okay-retard)
-🍀 [Ayush](https://github.com/MissJuliaRobot/MissJuliaRobot)
-🍀 [Inuka Asith](https://github.com/inukaasith)
-🍀 [Legendx](https://github.com/LEGENDXOP)
-🍀 [Amarnath c](https://github.com/Amarnathcdj)
-🍀 [Thehamkercat](https://github.com/thehamkercat)
-🍀 [DragSama](https://github.com/DragSama)
+🖤 [PaulSonOfLars](https://github.com/PaulSonOfLars/tgbot)
+🖤 [Saitama](https://github.com/AnimeKaizoku)
+🖤 [Loli-Killer](https://github.com/Loli-Killer)
+🖤 [Shreyansh](https://github.com/okay-retard)
+🖤 [Ayush](https://github.com/MissJuliaRobot/MissJuliaRobot)
+🖤 [Inuka Asith](https://github.com/inukaasith)
+🖤 [Legendx](https://github.com/LEGENDXOP)
+🖤 [Amarnath c](https://github.com/Amarnathcdj)
+🖤 [Thehamkercat](https://github.com/thehamkercat)
+🖤 [DragSama](https://github.com/DragSama)
