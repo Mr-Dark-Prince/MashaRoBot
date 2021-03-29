@@ -27,6 +27,7 @@ The easiest way to deploy this Bot
 🖤 [PaulSonOfLars](https://github.com/PaulSonOfLars/tgbot)
 🖤 [Saitama](https://github.com/AnimeKaizoku)
 🖤 [Loli-Killer](https://github.com/Loli-Killer)
+🖤 [RealAkito](https://github.com/RealAkito)
 🖤 [Shreyansh](https://github.com/okay-retard)
 🖤 [Ayush](https://github.com/MissJuliaRobot/MissJuliaRobot)
 🖤 [Inuka Asith](https://github.com/inukaasith)
