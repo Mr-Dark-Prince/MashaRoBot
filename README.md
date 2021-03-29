@@ -25,7 +25,7 @@ The easiest way to deploy this Bot
 ## CREDITS
 
 🍀 [PaulSonOfLars](https://github.com/PaulSonOfLars/tgbot)
-🍀 [Sawada](https://github.com/AnimeKaizoku)
+🍀 [Saitama](https://github.com/AnimeKaizoku)
 🍀 [Loli-Killer](https://github.com/Loli-Killer)
 🍀 [Shreyansh](https://github.com/okay-retard)
 🍀 [Ayush](https://github.com/MissJuliaRobot/MissJuliaRobot)
@@ -33,3 +33,4 @@ The easiest way to deploy this Bot
 🍀 [Legendx](https://github.com/LEGENDXOP)
 🍀 [Amarnath c](https://github.com/Amarnathcdj)
 🍀 [Thehamkercat](https://github.com/thehamkercat)
+🍀 [DragSama](https://github.com/DragSama)
