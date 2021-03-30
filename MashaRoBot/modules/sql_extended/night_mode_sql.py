@@ -1,5 +1,5 @@
 from sqlalchemy import Boolean, Column, Integer, String, UnicodeText
-from Evie.modules.sql import BASE, SESSION
+from MashaRoBot.modules.sql import BASE, SESSION
 
 
 class Nightmode(BASE):
