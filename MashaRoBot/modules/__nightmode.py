@@ -1,32 +1,14 @@
+import os
+
 from MashaRoBot.modules.sql_extended.night_mode_sql import add_nightmode, rmnightmode, get_all_chat_id, is_nightmode_indb
 from telethon.tl.types import ChatBannedRights
 from apscheduler.schedulers.asyncio import AsyncIOScheduler 
 from telethon import functions
-from telethon import types
 from MashaRoBot.events import register
+from MashaRoBot import OWNER_ID
 from MashaRoBot import telethn as tbot
-import os
-
-
-async def is_register_admin(chat, user):
-    if isinstance(chat, (types.InputPeerChannel, types.InputChannel)):
-
-        return isinstance(
-            (await tbot(functions.channels.GetParticipantRequest(chat, user))).participant,
-            (types.ChannelParticipantAdmin, types.ChannelParticipantCreator)
-        )
-    elif isinstance(chat, types.InputPeerChat):
-
-        ui = await tbot.get_peer_id(user)
-        ps = (await tbot(functions.messages.GetFullChatRequest(chat.chat_id))) \
-            .full_chat.participants.participants
-        return isinstance(
-            next((p for p in ps if p.user_id == ui), None),
-            (types.ChatParticipantAdmin, types.ChatParticipantCreator)
-        )
-    else:
-        return None
-
+from telethon import *
+from telethon import Button, custom, events
 
 hehes = ChatBannedRights(
     until_date=None,
@@ -41,6 +23,7 @@ hehes = ChatBannedRights(
     pin_messages=True,
     change_info=True,
 )
+
 openhehe = ChatBannedRights(
     until_date=None,
     send_messages=False,
@@ -55,79 +38,130 @@ openhehe = ChatBannedRights(
     change_info=True,
 )
 
-@register(pattern="^/addnt")
-async def close_ws(event):
-    if event.is_group:
-     if not (await is_register_admin(event.input_chat, event.message.sender_id)):
-       await event.reply("⚠️Hai.. You are not admin..You can't use this command..")
-       return
+from telethon.tl.types import (
+    ChannelParticipantsAdmins,
+    ChatAdminRights,
+    MessageEntityMentionName,
+    MessageMediaPhoto,
+)
 
-    if not event.is_group:
-        await event.reply("You Can Only Enable Night Mode in Groups.")
-        return
-    if is_nightmode_indb(str(event.chat_id)):
-        await event.reply("This Chat is Has Already Enabled Night Mode.")
-        return
-    add_nightmode(str(event.chat_id))
-    await event.reply(f"Added Chat {event.chat.title} With Id {event.chat_id} To Database. **This Group Will Be Closed On 12Am(IST) And Will Opened On 06Am(IST)**")
+from telethon.tl.functions.channels import (
+    EditAdminRequest,
+    EditBannedRequest,
+    EditPhotoRequest,
+)
 
-@register(pattern="^/rmnt")
-async def disable_ws(event):
-    if event.is_group:
-     if not (await is_register_admin(event.input_chat, event.message.sender_id)):
-       await event.reply("⚠️Hai.. You are not admin..You can't use this command..")
-       return
+async def is_register_admin(chat, user):
+    if isinstance(chat, (types.InputPeerChannel, types.InputChannel)):
+        return isinstance(
+            (
+                await tbot(functions.channels.GetParticipantRequest(chat, user))
+            ).participant,
+            (types.ChannelParticipantAdmin, types.ChannelParticipantCreator),
+        )
+    if isinstance(chat, types.InputPeerUser):
+        return True
 
-    if not event.is_group:
-        await event.reply("You Can Only Disable Night Mode in Groups.")
+async def can_change_info(message):
+    result = await tbot(
+        functions.channels.GetParticipantRequest(
+            channel=message.chat_id,
+            user_id=message.sender_id,
+        )
+    )
+    p = result.participant
+    return isinstance(p, types.ChannelParticipantCreator) or (
+        isinstance(p, types.ChannelParticipantAdmin) and p.admin_rights.change_info
+    )
+
+@register(pattern="^/(nightmode|Nightmode|NightMode) ?(.*)")
+async def profanity(event):
+    if event.fwd_from:
         return
-    if not is_nightmode_indb(str(event.chat_id)):
-        await event.reply("This Chat is Has Not Enabled Night Mode.")
+    if event.is_private:
         return
-    rmnightmode(str(event.chat_id))
-    await event.reply(f"Removed Chat {event.chat.title} With Id {event.chat_id} From Database.")
+    input = event.pattern_match.group(2)
+    if not event.sender_id == OWNER_ID:
+        if not await is_register_admin(event.input_chat, event.sender_id):
+           await event.reply("Only admins can execute this command!")
+           return
+        else:
+          if not await can_change_info(message=dmod):
+            await event.reply("You are missing the following rights to use this command:CanChangeinfo")
+            return
+    if not input:
+        if is_nightmode_indb(str(event.chat_id)):
+                await event.reply(
+                    "Currently NightMode is Enabled for this Chat"
+                )
+                return
+        await event.reply(
+            "Currently NightMode is Disabled for this Chat"
+        )
+        return
+    if "on" in input:
+        if event.is_group:
+            if is_nightmode_indb(str(event.chat_id)):
+                    await event.reply(
+                        "Night Mode is Already Turned ON for this Chat"
+                    )
+                    return
+            add_nightmode(str(event.chat_id))
+            await event.reply("NightMode turned on for this chat.")
+    if "off" in input:
+        if event.is_group:
+            if not is_nightmode_indb(str(event.chat_id)):
+                    await event.reply(
+                        "Night Mode is Already Off for this Chat"
+                    )
+                    return
+        rmnightmode(str(event.chat_id))
+        await event.reply("NightMode Disabled!")
+    if not "off" in input and not "on" in input:
+        await event.reply("Please Specify On or Off!")
+        return
 
 
 async def job_close():
-    ws_chats = get_all_chat_id()
-    if len(ws_chats) == 0:
+    chats = get_all_chat_id()
+    if len(chats) == 0:
         return
-    for warner in ws_chats:
+    for pro in chats:
         try:
             await tbot.send_message(
-              int(warner.chat_id), "12:00 Am, Group Is Closing Till 6 Am. Night Mode Started ! \n**Powered By Masha**"
+              int(pro.chat_id), "12:00 Am, Group Is Closing Till 6 Am. Night Mode Started ! \n**Powered By Evlie**"
             )
             await tbot(
             functions.messages.EditChatDefaultBannedRightsRequest(
-                peer=int(warner.chat_id), banned_rights=hehes
+                peer=int(pro.chat_id), banned_rights=hehes
             )
             )
         except Exception as e:
-            logger.info(f"Unable To Close Group {warner} - {e}")
+            logger.info(f"Unable To Close Group {chat} - {e}")
 
 #Run everyday at 12am
 scheduler = AsyncIOScheduler(timezone="Asia/Kolkata")
-scheduler.add_job(job_close, trigger="cron", hour=23, minute=55)
+scheduler.add_job(job_close, trigger="cron", hour=23, minute=59)
 scheduler.start()
 
 async def job_open():
-    ws_chats = get_all_chat_id()
-    if len(ws_chats) == 0:
+    chats = get_all_chat_id()
+    if len(chats) == 0:
         return
-    for warner in ws_chats:
+    for pro in chats:
         try:
             await tbot.send_message(
-              int(warner.chat_id), "06:00 Am, Group Is Opening.\n**Powered By Masha**"
+              int(pro.chat_id), "06:00 Am, Group Is Opening.\n**Powered By Masha**"
             )
             await tbot(
             functions.messages.EditChatDefaultBannedRightsRequest(
-                peer=int(warner.chat_id), banned_rights=openhehe
+                peer=int(pro.chat_id), banned_rights=openhehe
             )
         )
         except Exception as e:
-            logger.info(f"Unable To Open Group {warner.chat_id} - {e}")
+            logger.info(f"Unable To Open Group {pro.chat_id} - {e}")
 
 # Run everyday at 06
 scheduler = AsyncIOScheduler(timezone="Asia/Kolkata")
-scheduler.add_job(job_open, trigger="cron", hour=6, minute=10)
+scheduler.add_job(job_open, trigger="cron", hour=5, minute=58)
 scheduler.start()
