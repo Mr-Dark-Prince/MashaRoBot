@@ -267,7 +267,7 @@ async def apk(e):
             + app_link
             + "'>View in Play Store</a>"
         )
-        app_details += "\n\n===> Senku <==="
+        app_details += "\n\n===> Masha <==="
         await e.reply(app_details, link_preview=True, parse_mode="HTML")
     except IndexError:
         await e.reply("No result found in search. Please enter **Valid app name**")
@@ -278,10 +278,10 @@ async def apk(e):
 __mod_name__ = "GOOGLE"
 
 __help__ = """
-• `/google` <text>`*:* Perform a google search
-• `/img` `<text>`*:* Search Google for images and returns them\nFor greater no. of results specify lim, For eg: `/img hello lim=10`
-• `/app` `<appname>`*:* Searches for an app in Play Store and returns its details.
+• `/google` `<text>`*:* Perform a google search
+• `/img `<text>`*:* Search Google for images and returns them\nFor greater no. of results specify lim, For eg: `/img hello lim=10`
+• `/app` `<appname>*:* Searches for an app in Play Store and returns its details.
 • `/reverse`*:* Does a reverse image search of the media which it was replied to.
-• `Senku` `<query>`*:* Senku answers the query
-  💡Ex: `Senku where is India?`
+ • `Masha` `<query>`*:* Senku answers the query
+  💡Ex: `Masha where is India?`
 """
