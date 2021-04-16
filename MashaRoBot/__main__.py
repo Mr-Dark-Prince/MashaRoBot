@@ -354,9 +354,10 @@ def Masha_about_callback(update: Update, context: CallbackContext):
 • I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
 • I check for admins' permissions before executing any command and more stuffs
 
-\n_Senku's licensed under the GNU General Public License v3.0_
+_Senku's licensed under the GNU General Public License v3.0_
 
-Here is the [💾Repository](https://github.com/FtSasaki/SenkuRobot).
+Here is the [💾 Repository](https://github.com/FtSasaki/SenkuRobot).
+
 If you have any question about Senku, let us know at @SenkuSupport.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
