@@ -54,7 +54,7 @@ async def _(event):
 
 
 __help__ = """
- ❍ /json*:* Get Detailed info about any message
+• `/json`*:* Get Detailed info about any message
 """
 
 __mod_name__ = "JSON"
