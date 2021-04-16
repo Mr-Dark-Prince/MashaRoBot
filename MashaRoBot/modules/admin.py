@@ -628,17 +628,17 @@ def adminlist(update, context):
 
 
 __help__ = """
- ❍ /admins*:* list of admins in the chat
+• `/admins`*:* list of admins in the chat
 
 *Admins only:*
- ❍ /pin*:* silently pins the message replied to - add `'loud'` or `'notify'` to give notifs to users
- ❍ /unpin*:* unpins the currently pinned message
- ❍ /invitelink*:* gets invitelink
- ❍ /promote*:* promotes the user
- ❍ /demote*:* demotes the user
- ❍ /title <title here>*:* sets a custom title for an admin that the bot promoted
- ❍ /admincache*:* force refresh the admins list
- ❍ /antispam <on/off/yes/no>*:* Will toggle our antispam tech or return your current settings.
+• `/pin`*:* silently pins the message replied to - add `'loud'` or `'notify'` to give notifs to users
+• `/unpin`*:* unpins the currently pinned message
+• `/invitelink`*:* gets invitelink
+• `/promote`*:* promotes the user
+• `/demote`*:* demotes the user
+• `/title` `<title here>`*:* sets a custom title for an admin that the bot promoted
+• `/admincache`*:* force refresh the admins list
+• `/antispam` `<on/off/yes/no>`*:* Will toggle our antispam tech or return your current settings.
 
 *Note:* Night Mode chats get Automatically closed at 12 am(IST)
 and Automatically openned at 6 am(IST) To Prevent Night Spams.
