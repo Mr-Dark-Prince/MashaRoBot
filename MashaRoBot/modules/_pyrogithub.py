@@ -10,7 +10,7 @@ __mod_name__ = "GITHHUB"
 __help__ = """
 I will give information about github profile 
 
- ❍ /github <username>*:* Get information about a GitHub user.
+• `/github` `<username>`*:* Get information about a GitHub user.
 """
 
 @pbot.on_message(filters.command('github'))
