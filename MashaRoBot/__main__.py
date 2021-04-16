@@ -347,13 +347,13 @@ def Masha_about_callback(update: Update, context: CallbackContext):
     if query.data == "masha_":
         query.message.edit_text(
             text=""" ℹ️ I'm *Senku*, a powerful group management bot built to help you manage your group easily.
+
 • I can restrict users.
 • I can greet users with customizable welcome messages and even set a group's rules.
 • I have an advanced anti-flood system.
 • I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
 • I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
-• I check for admins' permissions before executing any command and more stuffs
-
+• I check for admins' permissions before executing any command and more stuffs.
 _Senku's licensed under the GNU General Public License v3.0_
 
 Here is the [💾 Repository](https://github.com/FtSasaki/SenkuRobot).
