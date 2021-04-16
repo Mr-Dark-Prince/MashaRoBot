@@ -92,11 +92,12 @@ def gettime(update: Update, context: CallbackContext):
 
 
 __help__ = """
- ❍ /time <query>*:* Gives information about a timezone.
+• `/time` `<query>`*:* Gives information about a timezone.
 *Available queries:* Country Code/Country Name/Timezone Name
- ❍ ⏰ [Timezones list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
 
-💡 Ex:- /time IN *:* It will shows Indian current time and date..
+• ⏰ Timezones [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
+
+💡 Ex:- `/time IN` *:* It will shows Indian current time and date.
 """
 
 TIME_HANDLER = DisableAbleCommandHandler("time", gettime)
