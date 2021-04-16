@@ -347,14 +347,16 @@ def Masha_about_callback(update: Update, context: CallbackContext):
     if query.data == "masha_":
         query.message.edit_text(
             text=""" ℹ️ I'm *Senku*, a powerful group management bot built to help you manage your group easily.
-❍ I can restrict users.
-❍ I can greet users with customizable welcome messages and even set a group's rules.
-❍ I have an advanced anti-flood system.
-❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
-❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
-❍ I check for admins' permissions before executing any command and more stuffs
+• I can restrict users.
+• I can greet users with customizable welcome messages and even set a group's rules.
+• I have an advanced anti-flood system.
+• I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
+• I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
+• I check for admins' permissions before executing any command and more stuffs
+
 \n_Senku's licensed under the GNU General Public License v3.0_
-Here is the [💾Repository](https://github.com/Mr-Dark-Prince/MashaRoBot).
+
+Here is the [💾Repository](https://github.com/FtSasaki/SenkuRobot).
 If you have any question about Senku, let us know at @SenkuSupport.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -381,8 +383,8 @@ def Source_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *Senku*
-                 \nHere is the [Source Code](https://github.com/Mr-Dark-Prince/MashaRoBot) .""",
+            text=""" Hey there! I'm *SenkuRobot*
+                 \nHere is the 💾 [Source Code](https://github.com/FtSasaki/SenkuRobot) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=False,
             reply_markup=InlineKeyboardMarkup(
