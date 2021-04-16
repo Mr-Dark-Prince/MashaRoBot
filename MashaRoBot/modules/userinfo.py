@@ -537,14 +537,14 @@ When marked as AFK, any mentions will be replied to with a message to say you're
 • `/bio`*:* will get your or another user's bio. This cannot be set by yourself.
 • `/setbio` `<text>`*:* while replying, will save another user's bio 
 *Examples:* 💡
- ➩ `/bio @username(defaults to yours if not specified).`
+ ➩ `/bio @username` (defaults to yours if not specified)
  ➩ `/setbio This user is a wolf` (reply to the user)
 
 *Overall Information about you:*
 • `/info`*:* get information about a user. 
  
 *What is that health thingy?*
- Come and see [HP System explained](https://t.me/OnePunchUpdates/192)
+Read [HP System explained](https://t.me/OnePunchUpdates/192)
 """
 
 SET_BIO_HANDLER = DisableAbleCommandHandler("setbio", set_about_bio)
