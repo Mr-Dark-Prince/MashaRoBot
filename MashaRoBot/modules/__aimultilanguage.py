@@ -13,7 +13,7 @@ from telethon import events
 from MashaRoBot.events import register
 
 string = (
-  "It's exhilarating | Get Excited!! ~ @SenkuSupport",
+  "It's exhilarating | Get Excited!!",
   "I am Senku!",
 )
 
