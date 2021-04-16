@@ -101,7 +101,7 @@ Time Zones:- {tom}
 Top Level Domain:- {lanester}
 wikipedia:- {wiki}</b>
 
-Gathered By MASHA.</b>
+Gathered By @SenkuRobot.</b>
 """
     
     
@@ -113,9 +113,9 @@ Gathered By MASHA.</b>
     
 
 __help__ = """
-I will give information about a country
+I will give information about a country.
 
- ❍ /country <country name>*:* Gathering info about given country
+• `/country` `<country name>`*:* Gathering info about given country
 """
 
 __mod_name__ = "COUNTRY"
