@@ -93,10 +93,10 @@ async def _(event):
 
 
 __help__ = """
-I can convert text to voice and voice to text..
+I can convert text to voice and voice to text.
 
- ❍ /tts <lang code>*:* Reply to any message to get text to speech output
- ❍ /stt*:* Type in reply to a voice message(support english only) to extract text from it.
+• `/tts` `<lang code>`*:* Reply to any message to get text to speech output
+• `/stt`*:* Type in reply to a voice message(support english only) to extract text from it.
 
 *Language Codes*
 `af,am,ar,az,be,bg,bn,bs,ca,ceb,co,cs,cy,da,de,el,en,eo,es,
