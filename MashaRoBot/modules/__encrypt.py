@@ -29,6 +29,6 @@ async def hmm(event):
 __mod_name__ = "SECURE"
 
 __help__ = """
- ❍ /encrypt*:* Encrypts The Given Text
- ❍ /decrypt*:* Decrypts Previously Ecrypted Text
+• `/encrypt`*:* Encrypts The Given Text
+• `/decrypt`*:* Decrypts Previously Ecrypted Text
 """
