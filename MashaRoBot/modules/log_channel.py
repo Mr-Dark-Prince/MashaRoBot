@@ -198,10 +198,10 @@ if is_module_loaded(FILENAME):
 • `/setlog`*:* set the log channel.
 • `/unsetlog`*:* unset the log channel.
 
-Setting the log channel is done by:
+Setting the log channel is done by *:*
 • adding the bot to the desired channel (as an admin ofc!)
-• sending /setlog in the channel
-• forwarding the /setlog to the group
+• sending `/setlog` in the channel
+• forwarding the `/setlog` to the group
 """
 
     __mod_name__ = "CHANNEL"
