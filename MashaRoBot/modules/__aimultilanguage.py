@@ -78,8 +78,8 @@ async def _(event):
         return
   prof = str(event.text)
   
-  if not "Masha" in prof:
-    if not "masha" in prof:
+  if not "Senku" in prof:
+    if not "senku" in prof:
       reply_msg = await event.get_reply_message()
       if not reply_msg.sender_id == BOT_ID:
            return
