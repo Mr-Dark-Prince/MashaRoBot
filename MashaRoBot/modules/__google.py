@@ -25,17 +25,38 @@ from MashaRoBot import *
 
 from MashaRoBot.events import register
 
+async def is_register_admin(chat, user):
+    if isinstance(chat, (types.InputPeerChannel, types.InputChannel)):
+
+        return isinstance(
+            (await client(functions.channels.GetParticipantRequest(chat, user))).participant,
+            (types.ChannelParticipantAdmin, types.ChannelParticipantCreator)
+        )
+    if isinstance(chat, types.InputPeerChat):
+
+        ui = await client.get_peer_id(user)
+        ps = (await client(functions.messages.GetFullChatRequest(chat.chat_id))) \
+                .full_chat.participants.participants
+        return isinstance(
+            next((p for p in ps if p.user_id == ui), None),
+            (types.ChatParticipantAdmin, types.ChatParticipantCreator)
+        )
+    return None
+
 opener = urllib.request.build_opener()
-useragent = "Mozilla/5.0 (Linux; Android 9; SM-G960F Build/PPR1.180610.011; wv)"
+useragent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36"
 opener.addheaders = [("User-agent", useragent)]
 
-
-@register(pattern="^/google (.*)")
+@register(pattern="^/google (.*)") 
 async def _(event):
     if event.fwd_from:
         return
-    
-    webevent = await event.reply("searching........")
+    if event.is_group:
+     if not (await is_register_admin(event.input_chat, event.message.sender_id)):
+       await event.reply(" Hai.. You are not admin..  You can't use this command.. But you can use in my pm")
+       return
+    # SHOW_DESCRIPTION = False
+    catevent = await event.reply("`searching........`")
     match = event.pattern_match.group(1)
     page = re.findall(r"page=\d+", match)
     try:
@@ -53,12 +74,13 @@ async def _(event):
             title = gresults["titles"][i]
             link = gresults["links"][i]
             desc = gresults["descriptions"][i]
-            msg += f"•[{title}]({link})\n**{desc}**\n\n"
+            msg += f"•[{title}]({link})\n`{desc}`\n\n"
         except IndexError:
             break
-    await webevent.edit(
+    await catevent.edit(
         "**Search Query:**\n`" + match + "`\n\n**Results:**\n" + msg, link_preview=False
     )
+
 
 @register(pattern="^/img (.*)")
 async def img_sampler(event):
