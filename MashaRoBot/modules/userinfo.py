@@ -531,7 +531,7 @@ When marked as AFK, any mentions will be replied to with a message to say you're
 • `/me`*:* will get your or another user's info.
 *Examples:* 💡
  ➩ `/setme` `I am a wolf.`
- ➩ `/me `@username`(defaults to yours if no user specified)
+ ➩ `/me `@username` (defaults to yours if no user specified)
 
 *Information others add on you:* 
 • `/bio`*:* will get your or another user's bio. This cannot be set by yourself.
