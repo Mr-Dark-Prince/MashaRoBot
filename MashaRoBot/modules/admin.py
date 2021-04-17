@@ -640,9 +640,12 @@ __help__ = """
 • `/admincache`*:* force refresh the admins list
 • `/antispam` `<on/off/yes/no>`*:* Will toggle our antispam tech or return your current settings.
 
+*Zombies*:
+• `/zombies` *:* scan deleted accounts
+• `/zombies clean` *:* cleans deleted accounts
+
 *Note:* Night Mode chats get Automatically closed at 12 am(IST)
 and Automatically openned at 6 am(IST) To Prevent Night Spams.
-
 """
 
 ADMINLIST_HANDLER = DisableAbleCommandHandler("admins", adminlist)
