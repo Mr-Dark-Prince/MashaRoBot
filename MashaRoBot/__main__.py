@@ -98,7 +98,14 @@ buttons = [
 
 
 HELP_STRINGS = """
-*『HELP BUTTONS HERE』 * [:](https://telegra.ph/file/418fe04d27f1fb02788e3.png)"""
+*『HELP BUTTONS HERE』 *
+
+• `/help`*:* PM's you this message[.](https://telegra.ph/file/418fe04d27f1fb02788e3.png)
+ • `/help` `<module name>`*:* PM's you info about that module.
+ • `/settings`*:*
+   • in PM: will send you your settings for all supported modules.
+   • in a group: will redirect you to pm, with all that chat's settings.
+"""
 
 
 DONATE_STRING = """No need ! I'm rich OwO"""
