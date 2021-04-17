@@ -74,7 +74,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hellow My name is *Senku*
+Hello! I am *Senku*.
 I'm here to help you manage your groups! Hit *📚Commands* button below to find out more about how to use me to my full potential[.](https://telegra.ph/file/418fe04d27f1fb02788e3.png)
 """
 
@@ -98,7 +98,7 @@ buttons = [
 
 
 HELP_STRINGS = """
-*『HELP BUTTONS HERE』*"""
+*『HELP BUTTONS HERE』 * [:](https://telegra.ph/file/418fe04d27f1fb02788e3.png)"""
 
 
 DONATE_STRING = """No need ! I'm rich OwO"""
