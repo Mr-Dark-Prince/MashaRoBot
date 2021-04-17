@@ -13,8 +13,8 @@ from telethon import events
 from MashaRoBot.events import register
 
 string = (
-  "I belong To Mr_dark_prince!",
-  "Im Fairly Yound And Was Made by mr_dark_prince!",
+  "Get Excited!",
+  "I am Senku!",
 )
 
 
@@ -120,7 +120,7 @@ async def _(event):
    except CFError as e:
            print(e)
   elif "Ann" in result:
-   pro = "Yeah, My name is Masha"
+   pro = "Yeah, I am Senku"
    try:
       async with tbot.action(event.chat_id, 'typing'):
            await event.reply(pro)
