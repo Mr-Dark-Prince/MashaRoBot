@@ -1,5 +1,5 @@
 {
-      "name": "MashaRoBot",
+      "name": "SenkuRobot",
       "description": "Telegram group management bot.",
       "keywords": [
          "telegram",
@@ -8,7 +8,7 @@
          "manager",
          "Masha"
       ],   
-   "repository": "https://github.com/Mr-Dark-Prince/MashaRoBot",
+   "repository": "https://github.com/FtSasaki/SenkuRobot",
    "addons": [
       {
          "options": {
