@@ -13,8 +13,8 @@ from telethon import events
 from MashaRoBot.events import register
 
 string = (
-  "I belong To Mr_dark_prince!",
-  "Im Fairly Yound And Was Made by mr_dark_prince!",
+  "I belong To xz5pd!",
+  "Im Fairly Yound And Was Made by xz5pd!",
 )
 
 
