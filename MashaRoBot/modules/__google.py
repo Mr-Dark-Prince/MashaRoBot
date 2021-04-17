@@ -304,6 +304,6 @@ __help__ = """
 • `/img` `<text>`*:* Search Google for images and returns them\nFor greater no. of results specify lim, For eg: `/img hello lim=10`
 • `/app` `<appname>`*:* Searches for an app in Play Store and returns its details.
 • `/reverse`*:* Does a reverse image search of the media which it was replied to.
-• `Masha` `<query>`*:* Senku answers the query
-  💡Ex: `Masha where is India?`
+• `Senku` `<query>`*:* Senku answers the query
+  💡Ex: `Senku where is India?`
 """
