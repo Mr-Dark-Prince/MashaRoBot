@@ -26,7 +26,7 @@ from MashaRoBot import *
 from MashaRoBot.events import register
 
 opener = urllib.request.build_opener()
-useragent = "Mozilla/5.0 (Linux; Android 9; SM-G960F Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/74.0.3729.157 Mobile Safari/537.36"
+useragent = "Mozilla/6.0 (Linux; Android 8; SM-G960F Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/74.0.3729.157 Mobile Safari/537.36"
 opener.addheaders = [("User-agent", useragent)]
 
 
@@ -86,7 +86,7 @@ async def img_sampler(event):
 
 
 opener = urllib.request.build_opener()
-useragent = "Mozilla/5.0 (Linux; Android 9; SM-G960F Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/74.0.3729.157 Mobile Safari/537.36"
+useragent = "Mozilla/6.0 (Linux; Android 10; SM-G960F Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/74.0.3729.157 Mobile Safari/537.36"
 opener.addheaders = [("User-agent", useragent)]
 
 
@@ -278,10 +278,10 @@ async def apk(e):
 __mod_name__ = "GOOGLE"
 
 __help__ = """
- ❍ /google <text>*:* Perform a google search
- ❍ /img <text>*:* Search Google for images and returns them\nFor greater no. of results specify lim, For eg: `/img hello lim=10`
- ❍ /app <appname>*:* Searches for an app in Play Store and returns its details.
- ❍ /reverse: Does a reverse image search of the media which it was replied to.
- ❍ Masha <query>*:* Masha answers the query
+• `/google` `<text>`*:* Perform a google search
+• `/img` `<text>`*:* Search Google for images and returns them\nFor greater no. of results specify lim, For eg: `/img hello lim=10`
+• `/app` `<appname>`*:* Searches for an app in Play Store and returns its details.
+• `/reverse`*:* Does a reverse image search of the media which it was replied to.
+• `Masha` `<query>`*:* Senku answers the query
   💡Ex: `Masha where is India?`
 """
