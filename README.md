@@ -16,7 +16,7 @@
 </p>
 
 # SenkuRobot
-Me On Telegram [✨SenkuRobot](https://telegram.dog/SenkuRoot)
+Me On Telegram [✨SenkuRobot](https://telegram.dog/SenkuRobot)
 
 ## How To Host
 The easiest way to deploy this Bot
