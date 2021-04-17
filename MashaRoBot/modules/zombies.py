@@ -50,7 +50,7 @@ async def is_administrator(user_id: int, message):
 
 
 
-@register(events.NewMessage(pattern="^[!/]zombies ?(.*)"))
+@telethn.on(events.NewMessage(pattern="^[!/]zombies ?(.*)"))
 async def zombies(event):
     """ For .zombies command, list all the zombies in a chat. """
 
