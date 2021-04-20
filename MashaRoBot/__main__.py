@@ -74,8 +74,10 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hello! I am *Naruto*.
-I'm here to help you manage your groups! Hit *📚Commands* button below to find out more about how to use me to my full potential[.](https://telegra.ph/file/7f002e185edd5e88cfc7d.jpg)
+Dattebayo {}, it's Me your Favorite HOKAGE {}! 
+I am a Powerful Anime themed group management bot.
+I specialize in managing anime and similar themed groups. Join @NarutoRobot_Support To Know More about me
+You can find my list of available commands with /help [.](https://telegra.ph/file/7f002e185edd5e88cfc7d.jpg)
 """
 
 buttons = [
