@@ -75,13 +75,13 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 Hello! I am *Naruto*.
-I'm here to help you manage your groups! Hit *📚Commands* button below to find out more about how to use me to my full potential[.](https://telegra.ph/file/418fe04d27f1fb02788e3.png)
+I'm here to help you manage your groups! Hit *📚Commands* button below to find out more about how to use me to my full potential[.](https://telegra.ph/file/7f002e185edd5e88cfc7d.jpg)
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ Add Me 🔘", url="t.me/SenkuRoBot?startgroup=true"),
+            text="➕️ Add Me 🔘", url="t.me/NarutoRoBot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="ℹ️ About", callback_data="masha_"),
@@ -91,7 +91,7 @@ buttons = [
         InlineKeyboardButton(
             text="💾 Source", callback_data="source_"),
         InlineKeyboardButton(
-            text="🔔 News", url="https://t.me/SenkuNews"
+            text="🔔 Network", url="https://t.me/AnimeKraze"
         ),
     ],
 ]
@@ -100,7 +100,7 @@ buttons = [
 HELP_STRINGS = """
 *『HELP BUTTONS HERE』 *
 
-• `/help`*:* PM's you this message[.](https://telegra.ph/file/418fe04d27f1fb02788e3.png)
+• `/help`*:* PM's you this message[.](https://telegra.ph/file/7f002e185edd5e88cfc7d.jpg)
  • `/help` `<module name>`*:* PM's you info about that module.
  • `/settings`*:*
    • in PM: will send you your settings for all supported modules.
@@ -218,7 +218,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
+            "I'm awake already practicing the new jutsu I learnt!\n<b>Haven't rested since:</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -362,11 +362,11 @@ def Masha_about_callback(update: Update, context: CallbackContext):
 • I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
 • I check for admins' permissions before executing any command and more stuffs.
 
-_Senku's licensed under the GNU General Public License v3.0_
+_Naruto's licensed under the GNU General Public License v3.0_
 
-Here is the [💾 Repository](https://github.com/FtSasaki/SenkuRobot).
+Here is the [💾 Repository](https://github.com/Vedant-vn/NarutoRobot).
 
-If you have any question about Senku, let us know at @SenkuSupport.""",
+If you have any question about Senku, let us know at @NarutoRobot_Support.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -392,8 +392,8 @@ def Source_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hey there! I'm *SenkuRobot*
-                 \nHere is the 💾 [Source Code](https://github.com/FtSasaki/SenkuRobot) .""",
+            text=""" Hey there! I'm *NarutoRobot*
+                 \nHere is the 💾 [Source Code](https://github.com/Vedant-vn/NarutoRobot001) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=False,
             reply_markup=InlineKeyboardMarkup(
