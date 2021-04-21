@@ -74,26 +74,27 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Dattebayo {}, it's Me your Favorite *HOKAGE* {}! 
-I am a Powerful Anime themed group management bot.
-I,specialize in managing anime and similar themed groups. 
+Dattebayo {}, it's Me your Favorite *HOKAGE* *Naruto*! 
+
+I am a Powerful Anime themed group management bot.😁
+*I,specialize in managing anime and similar themed groups*. 
 Hit *🔥Powers🔥* button below to find out more about how to use me to my full Chakra Potential[.](https://telegra.ph/file/7f002e185edd5e88cfc7d.jpg)
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ Add Me 🔘", url="t.me/NarutoRoBot?startgroup=true"),
+            text="➕⚡Add ME⚡➕", url="t.me/NarutoRoBot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="ℹ️ About", callback_data="masha_"),
-        InlineKeyboardButton(text="📚 Commands", callback_data="help_back"),
+        InlineKeyboardButton(text="About Me 😇", callback_data="masha_"),
+        InlineKeyboardButton(text="🔥Powers🔥", callback_data="help_back"),
     ],
     [
         InlineKeyboardButton(
-            text="💾 Source", callback_data="source_"),
+            text="Source 💾", callback_data="source_"),
         InlineKeyboardButton(
-            text="🔔 Network", url="https://t.me/AnimeKraze"
+            text="Network 🔔", url="https://t.me/AnimeKraze"
         ),
     ],
 ]
@@ -110,7 +111,7 @@ HELP_STRINGS = """
 """
 
 
-DONATE_STRING = """No need ! I'm rich OwO"""
+DONATE_STRING = """No need ! Just Share The Bot to Your Friends"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -355,7 +356,7 @@ def Masha_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "masha_":
         query.message.edit_text(
-            text="""⚡️ I'm *Senku*, a powerful group management bot built to help you manage your group easily.
+            text="""I'M *Uzumaki Naruto* 💯🤘, a powerful group management bot built to help you manage your group easily.
 
 • I can restrict users.
 • I can greet users with customizable welcome messages and even set a group's rules.
@@ -368,7 +369,7 @@ _Naruto's licensed under the GNU General Public License v3.0_
 
 Here is the [💾 Repository](https://github.com/Vedant-vn/NarutoRobot).
 
-If you have any question about Senku, let us know at @NarutoRobot_Support.""",
+If you have any question about about our Bot Naruto, let us know at @NarutoRobot_Support.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
