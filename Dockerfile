@@ -65,7 +65,7 @@ RUN apt update && apt upgrade -y && \
 RUN pip3 install --upgrade pip setuptools
 
 # Copy Python Requirements to /root/MashaRoBot
-RUN git clone -b shiken https://github.com/ /root/MashaRoBot
+RUN git clone -b shiken https://github.com/Mr-Dark-Prince/MashaRoBot/root/MashaRoBot
 WORKDIR /root/MashaRoBot
 
 #Copy config file to /root/MashaRoBot/MashaRoBot
