@@ -53,7 +53,7 @@ async def _(event):
         return
     if event.is_group:
      if not (await is_register_admin(event.input_chat, event.message.sender_id)):
-       await event.reply(" Hai.. You are not admin..  You can't use this command.. But you can use in my pm")
+       await event.reply(" Yoo.. You are not admin..  You can't use this command.. But you can use in my pm")
        return
     # SHOW_DESCRIPTION = False
     catevent = await event.reply("`searching........`")
@@ -289,7 +289,7 @@ async def apk(e):
             + app_link
             + "'>View in Play Store</a>"
         )
-        app_details += "\n\nby @SenkuRobot"
+        app_details += "\n\nby @NarutoRobot"
         await e.reply(app_details, link_preview=True, parse_mode="HTML")
     except IndexError:
         await e.reply("No result found in search. Please enter **Valid app name**")
