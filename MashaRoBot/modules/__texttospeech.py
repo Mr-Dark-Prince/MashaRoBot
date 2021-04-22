@@ -31,7 +31,7 @@ async def _(event):
         return
     if event.is_group:
      if not (await is_register_admin(event.input_chat, event.message.sender_id)):
-       await event.reply("🚨 Need Admin Pewer.. You can't use this command.. But you can use in my pm")
+       await event.reply("🚨 Need Admin Power.. You can't use this command.. But you can use in my pm")
        return
 
     input_str = event.pattern_match.group(1)
@@ -55,7 +55,7 @@ async def _(event):
     except AssertionError:
         await event.reply(
             "The text is empty.\n"
-            "Nothing left to speak after pre-precessing, "
+            "Nothing left to speak after pre-processing, "
             "tokenizing and cleaning."
         )
         return
