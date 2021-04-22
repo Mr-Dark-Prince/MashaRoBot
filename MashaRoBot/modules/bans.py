@@ -64,25 +64,25 @@ def ban(update: Update, context: CallbackContext) -> str:
 
     if is_user_ban_protected(chat, user_id, member) and user not in DEV_USERS:
         if user_id == OWNER_ID:
-            message.reply_text("Trying to put me against a God level disaster huh?")
+            message.reply_text("You Think i can Fight against Lord Hokage? Hell No!")
         elif user_id in DEV_USERS:
-            message.reply_text("I can't act against our own.")
+            message.reply_text("Think about me? a Sanin is too Strong For me to Handle.")
         elif user_id in DRAGONS:
             message.reply_text(
-                "Fighting this Dragon here will put civilian lives at risk."
+                "Fighting this Akatsuki member here will put civilian lives at risk."
             )
         elif user_id in DEMONS:
             message.reply_text(
-                "Bring an order from Heroes association to fight a Demon disaster."
+                "Bring me order from Lord Hokage or Sanin to fight a Anbu Member."
             )
         elif user_id in TIGERS:
             message.reply_text(
-                "Bring an order from Heroes association to fight a Tiger disaster."
+                "Looks like He's A Strong Ninja ask Legendary Sanin For Help."
             )
         elif user_id in WOLVES:
-            message.reply_text("Wolf abilities make them ban immune!")
+            message.reply_text("Chunin abilities make them ban immune!")
         else:
-            message.reply_text("This user has immunity and cannot be banned.")
+            message.reply_text("This user is Chunin Level Ninja and cannot be banned.")
         return log_message
     if message.text.startswith("/s"):
         silent = True
