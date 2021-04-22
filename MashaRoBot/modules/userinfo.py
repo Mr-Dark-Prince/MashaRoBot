@@ -287,13 +287,13 @@ def info(update: Update, context: CallbackContext):
     disaster_level_present = False
 
     if user.id == OWNER_ID:
-        text += "\n\nThis Ninja is The 'Lord Hokage'."
+        text += "\n\nThis Ninja is our Protector The 'Lord Hokage'."
         disaster_level_present = True
     elif user.id in DEV_USERS:
-        text += "\n\nThis Ninja is member of 'Legendary Sanins'."
+        text += "\n\nThis Ninja is one of the'Legendary Sanins'."
         disaster_level_present = True
     elif user.id in DRAGONS:
-        text += "\n\nThe Ninja level of this person is 'Akatsuki'."
+        text += "\n\nThis Ninja is a threat afterall he's an 'Akatsuki'."
         disaster_level_present = True
     elif user.id in DEMONS:
         text += "\n\nThe Ninja level of this person is 'Anbu black op'."
