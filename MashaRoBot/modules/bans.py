@@ -73,14 +73,14 @@ def ban(update: Update, context: CallbackContext) -> str:
             )
         elif user_id in DEMONS:
             message.reply_text(
-                "Bring me order from Lord Hokage or Sanin to fight a Anbu Member."
+                "Bring me order from Lord Hokage or Sanin to fight an Anbu Member."
             )
         elif user_id in TIGERS:
             message.reply_text(
                 "Looks like He's A Strong Ninja ask Legendary Sanin For Help."
             )
         elif user_id in WOLVES:
-            message.reply_text("Chunin abilities make them ban immune!")
+            message.reply_text("Chunin abilities make them ban immune! so ask Ramen Instead")
         else:
             message.reply_text("This user is Chunin Level Ninja and cannot be banned.")
         return log_message
@@ -123,7 +123,7 @@ def ban(update: Update, context: CallbackContext) -> str:
             # Do not reply
             if silent:
                 return log
-            message.reply_text("Banned!", quote=False)
+            message.reply_text("Rasengan...Banned!", quote=False)
             return log
         else:
             LOGGER.warning(update)
@@ -387,7 +387,7 @@ def selfunban(context: CallbackContext, update: Update) -> str:
         return
 
     chat.unban_member(user.id)
-    message.reply_text("Yep, I have unbanned you.")
+    message.reply_text("Yep, I have unbanned you, Now Give me some Ramen.")
 
     log = (
         f"<b>{html.escape(chat.title)}:</b>\n"
