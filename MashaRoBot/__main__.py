@@ -77,8 +77,8 @@ PM_START_TEXT = """
 Dattebayo! *{first}*, it's Me your Favorite *HOKAGE* *Uzumaki Naruto*! 
 
 I am a Powerful Anime themed group management bot.😁
-*I,specialize in managing anime and similar themed groups*. 
-Hit *🔥Powers🔥* button below to find out more about how to use me to my full Chakra Potential[.](https://telegra.ph/file/7f002e185edd5e88cfc7d.jpg)
+*I, Specialize in managing anime and similar themed groups*. 
+Hit *🔥Powers🔥* button below to find out more about how to use me to my full Chakra Potential[.](https://telegra.ph/file/0bcdca72c82597349a03d.mp4)
 """
 
 buttons = [
