@@ -74,7 +74,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Dattebayo {}, it's Me your Favorite *HOKAGE* *Naruto*! 
+Dattebayo! *{first}*, it's Me your Favorite *HOKAGE* *Uzumaki Naruto*! 
 
 I am a Powerful Anime themed group management bot.😁
 *I,specialize in managing anime and similar themed groups*. 
@@ -94,7 +94,7 @@ buttons = [
         InlineKeyboardButton(
             text="Source 💾", callback_data="source_"),
         InlineKeyboardButton(
-            text="Network 🔔", url="https://t.me/AnimeKraze"
+            text="Support Chat 💯", url="https://t.me/NarutoRobot_Support"
         ),
     ],
 ]
@@ -369,7 +369,7 @@ _Naruto's licensed under the GNU General Public License v3.0_
 
 Here is the [💾 Repository](https://github.com/Vedant-vn/NarutoRobot).
 
-If you have any question about about our Bot Naruto, let us know at @NarutoRobot_Support.""",
+If you have any question about our Bot Naruto, let us know at our Support Chat.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -395,8 +395,8 @@ def Source_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hey there! I'm *NarutoRobot*
-                 \nHere is the 💾 [Source Code](https://github.com/Vedant-vn/NarutoRobot001) .""",
+            text=""" Hey there! I'm *NarutoRobot* 
+                 \nYou want Codes Hmmm..Here is the 💾 [Source Code](https://github.com/Vedant-vn/NarutoRobot001) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=False,
             reply_markup=InlineKeyboardMarkup(
