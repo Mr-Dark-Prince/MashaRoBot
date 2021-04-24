@@ -12,16 +12,16 @@ DEFAULT_GOODBYE = "Nice knowing ya!"
 DEFAULT_WELCOME_MESSAGES = [
     "{first} is here!",  # Discord welcome messages copied
     "Ready player {first}",
-    "Genos, {first} is here.",
+    "Ayy Sasuke, Our Friend {first} is here.",
     "A wild {first} appeared.",
     "{first} came in like a Lion!",
     "{first} has joined your party.",
     "{first} just joined. Can I get a heal?",
     "{first} just joined the chat - asdgfhak!",
     "{first} just joined. Everyone, look busy!",
-    "Welcome, {first}. Stay awhile and listen.",
+    "Welcome, {first}. Have You Seen The Beast Titan? My Friend Levi is looking For Him.",
     "Welcome, {first}. We were expecting you ( ͡° ͜ʖ ͡°)",
-    "Welcome, {first}. We hope you brought pizza.",
+    "Welcome, {first}. We hope you brought Us Ramen.",
     "Welcome, {first}. Leave your weapons by the door.",
     "Swoooosh. {first} just landed.",
     "Brace yourselves. {first} just joined the chat.",
@@ -49,7 +49,7 @@ DEFAULT_WELCOME_MESSAGES = [
     "Hello. Is it {first} you're looking for?",
     "{first} has joined. Stay awhile and listen!",
     "Roses are red, violets are blue, {first} joined this chat with you",
-    "Welcome {first}, Avoid Punches if you can!",
+    "Welcome {first}, Avoid My Rasengan's if you can!",
     "It's a bird! It's a plane! - Nope, its {first}!",
     "{first} Joined! - Ok.",  # Discord welcome messages end.
     "All Hail {first}!",
@@ -61,18 +61,18 @@ DEFAULT_WELCOME_MESSAGES = [
     "Something just fell from the sky! - oh, its {first}.",
     "{first} Just teleported into the chat!",
     "Hi, {first}, show me your Hunter License!",  # Hunter Hunter
-    "I'm looking for Garo, oh wait nvm it's {first}.",  # One Punch man s2
+    "I'm looking for Sasuke, oh wait nvm it's Just {first}.",  # Naruto
     "Welcome {first}, leaving is not an option!",
     "Run Forest! ..I mean...{first}.",
     "{first} do 100 push-ups, 100 sit-ups, 100 squats, and 10km running EVERY SINGLE DAY!!!",  # One Punch ma
     "Huh?\nDid someone with a disaster level just join?\nOh wait, it's just {first}.",  # One Punch ma
-    "Hey, {first}, ever heard the King Engine?",  # One Punch ma
-    "Hey, {first}, empty your pockets.",
+    "Hey, {first}, ever heard The Name Madara Uchiha?",  # Naruto
+    "Hey, {first}, WE Love You 3000 Now for this Compliment Give me Some Ramen.",
     "Hey, {first}!, are you strong?",
     "Call the Avengers! - {first} just joined the chat.",
     "{first} joined. You must construct additional pylons.",
     "Ermagherd. {first} is here.",
-    "Come for the Snail Racing, Stay for the Chimichangas!",
+    "Pikachu I choose You!",
     "Who needs Google? You're everything we were searching for.",
     "This place must have free WiFi, cause I'm feeling a connection.",
     "Speak friend and enter.",
@@ -88,20 +88,20 @@ DEFAULT_WELCOME_MESSAGES = [
     "{first} joined the group, read by Mark Zuckerberg, CIA and 35 others.",
     "Welcome {first}, watch out for falling monkeys.",
     "Everyone stop what you’re doing, We are now in the presence of {first}.",
-    "Hey {first}, do you wanna know how I got these scars?",
+    "Hey {first}, ik You are Strong But Can You Beat Goku Tho?",
     "Welcome {first}, drop your weapons and proceed to the spy scanner.",
     "Stay safe {first}, Keep 3 meters social distances between your messages.",  # Corona memes lmao
-    "Hey {first}, Do you know I once One-punched a meteorite?",
-    "You’re here now {first}, Resistance is futile",
+    "Hey {first}, Do you know I once Kissed Sakura So I lost My some Power!",
+    "Hey {first}, My Owner VN Defeated Me So I'm Training Hard To Beat him once.",
     "{first} just arrived, the force is strong with this one.",
     "{first} just joined on president’s orders.",
-    "Hi {first}, is the glass half full or half empty?",
+    "Hey All Prince Of The Saiyans, Prince {first} Has Arrived ",
     "Yipee Kayaye {first} arrived.",
     "Welcome {first}, if you’re a secret agent press 1, otherwise start a conversation",
     "{first}, I have a feeling we’re not in Kansas anymore.",
     "They may take our lives, but they’ll never take our {first}.",
     "Coast is clear! You can come out guys, it’s just {first}.",
-    "Welcome {first}, pay no attention to that guy lurking.",
+    "Welcome {first}, Did You Saw Hinata Somewhere? I asked her to Make Ramen Again Today and she Ran Away.",
     "Welcome {first}, may the force be with you.",
     "May the {first} be with you.",
     "{first} just joined. Hey, where's Perry?",
@@ -138,8 +138,8 @@ DEFAULT_WELCOME_MESSAGES = [
     "Sugoi, Dekai. {first} Joined!",
     "{first}, do you know gods of death love apples?",  # Death Note owo
     "I'll take a potato chip.... and eat it",  # Death Note owo
-    "Oshiete oshiete yo sono shikumi wo!",  # Tokyo Ghoul
-    "Kaizoku ou ni...nvm wrong anime.",  # op
+    "And His Name Is EREN YEAGER!",  # AOT
+    "Yamatee Kudasaii...nvm wrong anime.",  # op
     "{first} just joined! Gear.....second!",  # Op
     "Omae wa mou....shindeiru",
     "Hey {first}, the leaf village lotus blooms twice!",  # Naruto stuff begins from here
@@ -183,8 +183,8 @@ DEFAULT_GOODBYE_MESSAGES = [
     "Bring him the photo",
     "Go outside!",
     "Ask again later",
-    "Think for yourself",
-    "Question authority",
+    "Think for yourself You Shall Be Cursed By My Master VN",
+    "Lmao a Noob left",
     "You are worshiping a sun god",
     "Don't leave the house today",
     "Give up!",
@@ -215,7 +215,7 @@ DEFAULT_GOODBYE_MESSAGES = [
     "Only a sinner",
     "Use bombs wisely",
     "Nobody knows the troubles you have seen",
-    "You look fat you should exercise more",
+    "You look Powerless you should exercise more",
     "Follow the zebra",
     "Why so blue?",
     "The devil in disguise",
