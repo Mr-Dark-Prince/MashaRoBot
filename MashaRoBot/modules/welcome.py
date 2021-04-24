@@ -497,7 +497,7 @@ def check_not_bot(member, chat_id, message_id, context):
 
         try:
             bot.edit_message_text(
-                "*kicks user*\nThey can always rejoin and try.",
+                "*Rasengans user*\nNoob Ninja failed Captcha They can always rejoin and try.",
                 chat_id=chat_id,
                 message_id=message_id,
             )
