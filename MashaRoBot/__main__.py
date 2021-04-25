@@ -74,7 +74,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Dattebayo! *{Username}*, it's Me your Favorite *HOKAGE* *Uzumaki Naruto*! 
+Dattebayo! {first}, it's Me your Favorite *HOKAGE* *Uzumaki Naruto*! 
 
 I am a Powerful Anime themed group management bot.😁
 *I, Specialize in managing anime and similar themed groups*. 
