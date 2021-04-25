@@ -66,6 +66,9 @@ def no_longer_afk(update: Update, context: CallbackContext):
                 "{} is finally Out Of Itachi's Genjutsu and back here!",
                 "Calm Down KURAMA...it's Just {} Back In the Chat!",
                 "Where is {}?\nIn the chat!",
+                "Our Ninja {} Has Completed The Mission and Now is Back In the Chat!",
+                "Hey {} Welcome Back but always Remember life's greatest lessons are learned through pain!",
+                "Ladies and Gentlemen {} is Back In the Chat! Let's Ask Him for Some Treat",
             ]
             chosen_option = random.choice(options)
             update.effective_message.reply_text(chosen_option.format(firstname))
@@ -129,10 +132,10 @@ def check_afk(update, context, user_id, fst_name, userc_id):
         if int(userc_id) == int(user_id):
             return
         if not user.reason:
-            res = "{} is afk".format(fst_name)
+            res = "This Ninja {} is afk Probably finding Our Sasuke".format(fst_name)
             update.effective_message.reply_text(res)
         else:
-            res = "{} is afk.\nReason: <code>{}</code>".format(
+            res = "This Ninja {} is afk.\nReason: <code>{}</code>".format(
                 html.escape(fst_name), html.escape(user.reason)
             )
             update.effective_message.reply_text(res, parse_mode="html")
