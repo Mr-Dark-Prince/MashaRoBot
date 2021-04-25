@@ -74,9 +74,11 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Dattebayo {}! I'm your favorite *Hokage* {} OwO!
+Dattebayo! It's Me your favorite Hokage *Uzumaki Naruto* OwO!
 
 I am a Powerful Anime themed group management bot.😁
+
+
 *I, Specialize in managing anime and similar themed groups*. 
 Hit *🔥Powers🔥* button below to find out more about how to use me to my full Chakra Potential[.](https://telegra.ph/file/6fcc2203a0a07966546b4.mp4)
 """
@@ -396,7 +398,7 @@ def Source_about_callback(update: Update, context: CallbackContext):
     if query.data == "source_":
         query.message.edit_text(
             text=""" Hey there! I'm *NarutoRobot* 
-                 \nYou want Codes Hmmm..Here is the 💾 [Source Code](https://github.com/Vedant-vn/NarutoRobot001) .""",
+                 \nYou want Codes Hmmm..You Can Have Them But Don't Come to Us asking Doubts, Here is the 💾 [Source Code](https://github.com/Vedant-vn/NarutoRobot001) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=False,
             reply_markup=InlineKeyboardMarkup(
