@@ -78,8 +78,8 @@ Dattebayo! It's Me your favorite Hokage *Uzumaki Naruto* OwO!
 
 I am a Powerful Anime themed group management bot.😁
 
+*I, Specialize in managing anime and similar themed groups*.
 
-*I, Specialize in managing anime and similar themed groups*. 
 Hit *🔥Powers🔥* button below to find out more about how to use me to my full Chakra Potential[.](https://telegra.ph/file/6fcc2203a0a07966546b4.mp4)
 """
 
