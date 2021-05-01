@@ -35,6 +35,7 @@ heroku3
 spamwatch
 alphabet_detector
 pyrate-limiter
+fontTools
 cachetools
 ujson
 pretty_errors
