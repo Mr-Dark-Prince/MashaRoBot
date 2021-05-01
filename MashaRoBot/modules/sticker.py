@@ -9,7 +9,7 @@ from fontTools.ttLib import TTFont
 from PIL import Image, ImageDraw, ImageFont, ImageOps
 from telethon.tl import functions, types
 
-from MashaRoBot.event import register
+from MashaRoBot.events import register
 
 COLORS = [
     "#F07975",
