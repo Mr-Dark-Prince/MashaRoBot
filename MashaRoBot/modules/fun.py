@@ -371,7 +371,7 @@ dispatcher.add_handler(DECIDE_HANDLER)
 dispatcher.add_handler(EIGHTBALL_HANDLER)
 dispatcher.add_handler(TABLE_HANDLER)
 
-__mod_name__ = "MEMES"
+__mod_name__ = "NARUTO FUN"
 __command_list__ = [
     "runs",
     "slap",
