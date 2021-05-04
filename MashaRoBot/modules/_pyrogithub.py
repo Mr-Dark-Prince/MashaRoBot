@@ -5,7 +5,7 @@ from MashaRoBot import pbot
 from MashaRoBot.pyrogramee.errors import capture_err
 
 
-__mod_name__ = "GITHHUB"
+__mod_name__ = "GITHUB"
 
 __help__ = """
 I will give information about github profile 
