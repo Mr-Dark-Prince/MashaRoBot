@@ -449,7 +449,7 @@ def __stats__():
     )
 
 
-__mod_name__ = "B LIST"
+__mod_name__ = "BLACK LIST"
 
 __help__ = """
 
