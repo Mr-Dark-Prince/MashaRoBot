@@ -77,8 +77,11 @@ PM_START_TEXT = """
 Dattebayo! It's Me your favorite Hokage *Uzumaki Naruto* OwO!
 
 I am a Powerful Anime themed group management bot.😁
-
 *I, Specialize in managing anime and similar themed groups*.
+
+
+(You are Free to Use Me Just Don't Make me Admin As I'm Still under developement,To Know More Please Visit Our Support Group.
+*IF you Make me Admin without asking our Support group,Owner will Not be Responsible If Something Happens To Your Groups*.)
 
 Hit *🔥Powers🔥* button below to find out more about how to use me to my full Chakra Potential[.](https://telegra.ph/file/6fcc2203a0a07966546b4.mp4)
 """
@@ -96,7 +99,11 @@ buttons = [
         InlineKeyboardButton(
             text="Source 💾", callback_data="source_"),
         InlineKeyboardButton(
-            text="Support Chat 💯", url="https://t.me/NarutoRobot_Support"
+            text="Support Chat 💯", url="https://t.me/NarutoRobot_Support"),   
+    ],
+    [
+        InlineKeyboardButton(
+            text="➕❤️Anime Chat❤️➕", url="https://t.me/Anime_Discussion_requests"
         ),
     ],
 ]
@@ -693,7 +700,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Get Excited OwO!")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Sleep Time Over! I'M BACK OwO")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
