@@ -73,8 +73,8 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-PM_START_TEXT = """
-Dattebayo! It's Me your favorite Hokage *Uzumaki Naruto* OwO!
+PM_START_TEXT = f"""
+Dattebayo {message.chat.first_name}! It's Me your favorite Hokage *Uzumaki Naruto* OwO!
 
 I am a Powerful Anime themed group management bot.😁
 *I, Specialize in managing anime and similar themed groups*.
