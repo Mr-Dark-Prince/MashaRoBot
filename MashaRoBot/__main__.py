@@ -224,6 +224,7 @@ def start(update: Update, context: CallbackContext):
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
         else:
+            first_name = update.effective_user.first_name
             update.effective_message.reply_photo(
                 NARUTO_PIC,
                 PM_START_TEXT.format(
@@ -422,6 +423,7 @@ def Source_about_callback(update: Update, context: CallbackContext):
             ),
         )
     elif query.data == "source_back":
+        first_name = update.effective_user.first_name
         query.message.edit_photo(
                 NARUTO_PIC,
                 PM_START_TEXT.format(
