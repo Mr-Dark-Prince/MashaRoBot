@@ -15,7 +15,7 @@ async def gogo(event):
  for i in result:
    k = [Button.inline("{}".format(i["name"]), data="search_{}".format(i["animeid"]))]
    buttons.append(k)
-   if len(buttons) == 99:
+   if len(buttons) == 1000000:
      break
  await event.reply("search", buttons=buttons)
 
