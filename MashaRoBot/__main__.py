@@ -425,6 +425,7 @@ def Source_about_callback(update: Update, context: CallbackContext):
                 NARUTO_PIC,
                 PM_START_TEXT.format(
                     escape_markdown(first_name), escape_markdown(context.bot.first_name)
+                ),
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
