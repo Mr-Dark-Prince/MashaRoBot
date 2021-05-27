@@ -74,7 +74,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Dattebayo! It's Me your favorite Hokage *Uzumaki Naruto* OwO!
+Dattebayo {}! It's Me your favorite Hokage *{}* OwO!
 
 I am a Powerful Anime themed group management bot.😁
 *I, Specialize in managing anime and similar themed groups*.
@@ -119,6 +119,8 @@ HELP_STRINGS = """
    • in a group: will redirect you to pm, with all that chat's settings.
 """
 
+
+NARUTO_PIC = "https://telegra.ph/file/9cb28cf1c89785f8bcd0f.mp4"
 
 DONATE_STRING = """No need ! Just Share The Bot to Your Friends"""
 
@@ -222,8 +224,10 @@ def start(update: Update, context: CallbackContext):
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
         else:
-            update.effective_message.reply_text(
-                PM_START_TEXT,
+            update.effective_message.reply_photo(
+                NARUTO_PIC,
+                PM_START_TEXT.format(
+                    escape_markdown(first_name), escape_markdown(context.bot.first_name)
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
@@ -417,8 +421,10 @@ def Source_about_callback(update: Update, context: CallbackContext):
             ),
         )
     elif query.data == "source_back":
-        query.message.edit_text(
-                PM_START_TEXT,
+        query.message.edit_photo(
+                NARUTO_PIC,
+                PM_START_TEXT.format(
+                    escape_markdown(first_name), escape_markdown(context.bot.first_name)
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
