@@ -83,7 +83,7 @@ I am a Powerful Anime themed group management bot.😁
 (You are Free to Use Me Just Don't Make me Admin As I'm Still under developement,To Know More Please Visit Our Support Group.
 *IF you Make me Admin without asking our Support group,Owner will Not be Responsible If Something Happens To Your Groups*.)
 
-Hit *🔥Powers🔥* button below to find out more about how to use me to my full Chakra Potential[.](https://telegra.ph/file/6fcc2203a0a07966546b4.mp4)
+Hit /help to find out more about how to use me at my full Chakra Potential[.](https://telegra.ph/file/6fcc2203a0a07966546b4.mp4)
 """
 
 buttons = [
@@ -119,8 +119,7 @@ HELP_STRINGS = """
    • in a group: will redirect you to pm, with all that chat's settings.
 """
 
-
-NARUTO_PIC = "https://telegra.ph/file/9cb28cf1c89785f8bcd0f.mp4"
+BOT_IMAGE = "https://telegra.ph/file/9cb28cf1c89785f8bcd0f.mp4"
 
 DONATE_STRING = """No need ! Just Share The Bot to Your Friends"""
 
@@ -226,7 +225,7 @@ def start(update: Update, context: CallbackContext):
         else:
             first_name = update.effective_user.first_name
             update.effective_message.reply_photo(
-                NARUTO_PIC,
+                BOT_IMAGE,
                 PM_START_TEXT.format(
                     escape_markdown(first_name), escape_markdown(context.bot.first_name)
                 ),
@@ -425,7 +424,7 @@ def Source_about_callback(update: Update, context: CallbackContext):
     elif query.data == "source_back":
         first_name = update.effective_user.first_name
         query.message.edit_photo(
-                NARUTO_PIC,
+                BOT_IMAGE,
                 PM_START_TEXT.format(
                     escape_markdown(first_name), escape_markdown(context.bot.first_name)
                 ),
