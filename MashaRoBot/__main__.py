@@ -74,16 +74,14 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Dattebayo {}! It's Me your favorite Hokage *{}* OwO!
+Dattebayo! It's Me your favorite Hokage *Uzumaki Naruto* OwO!
 
-I am a Powerful Anime themed group management bot.😁
-*I, Specialize in managing anime and similar themed groups*.
+*I am a Powerful Anime themed group management bot.😁 I,Specialize in managing anime and similar themed groups*.
 
-
-(You are Free to Use Me Just Don't Make me Admin As I'm Still under developement,To Know More Please Visit Our Support Group.
+(You are Free to Use Me Just Don't Make me Admin As I'm Still under developement,To Know More Please Visit Our Bot developement Group.
 *IF you Make me Admin without asking our Support group,Owner will Not be Responsible If Something Happens To Your Groups*.)
 
-Hit /help to find out more about how to use me at my full Chakra Potential[.](https://telegra.ph/file/6fcc2203a0a07966546b4.mp4)
+Hit *🔥Jutsu🔥* button below to find out more about how to use me to my full Chakra Potential[.](https://telegra.ph/file/9cb28cf1c89785f8bcd0f.mp4)
 """
 
 buttons = [
@@ -93,7 +91,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(text="About Me 😇", callback_data="masha_"),
-        InlineKeyboardButton(text="🔥Powers🔥", callback_data="help_back"),
+        InlineKeyboardButton(text="🔥Jutsu🔥", callback_data="help_back"),
     ],
     [
         InlineKeyboardButton(
@@ -111,7 +109,6 @@ buttons = [
 
 HELP_STRINGS = """
 *『HELP BUTTONS HERE』 *
-
 • `/help`*:* PM's you this message[.](https://telegra.ph/file/7f002e185edd5e88cfc7d.jpg)
  • `/help` `<module name>`*:* PM's you info about that module.
  • `/settings`*:*
@@ -119,9 +116,8 @@ HELP_STRINGS = """
    • in a group: will redirect you to pm, with all that chat's settings.
 """
 
-BOT_IMAGE = "https://telegra.ph/file/9cb28cf1c89785f8bcd0f.mp4"
 
-DONATE_STRING = """No need ! Just Share The Bot to Your Friends"""
+DONATE_STRING = """No need ! Just Share This Bot to Your Friends"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -223,19 +219,15 @@ def start(update: Update, context: CallbackContext):
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
         else:
-            first_name = update.effective_user.first_name
-            update.effective_message.reply_photo(
-                BOT_IMAGE,
-                PM_START_TEXT.format(
-                    escape_markdown(first_name), escape_markdown(context.bot.first_name)
-                ),
+            update.effective_message.reply_text(
+                PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
             )
     else:
         update.effective_message.reply_text(
-            "I'm awake already Just practicing the new jutsu I learnt!\n<b>Haven't rested since:</b> <code>{}</code>".format(
+            "I'm awake already Just practicing the New jutsu I learnt!\n<b>Haven't rested since:</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -371,18 +363,14 @@ def Masha_about_callback(update: Update, context: CallbackContext):
     if query.data == "masha_":
         query.message.edit_text(
             text="""I'M *Uzumaki Naruto* 💯🤘, a powerful group management bot built to help you manage your group easily.
-
 • I can restrict users.
 • I can greet users with customizable welcome messages and even set a group's rules.
 • I have an advanced anti-flood system.
 • I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
 • I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
 • I check for admins' permissions before executing any command and more stuffs.
-
 _Naruto's licensed under the GNU General Public License v3.0_
-
 Here is the [💾 Repository](https://github.com/Vedant-vn/NarutoRobot).
-
 If you have any question about our Bot Naruto, let us know at our Support Chat.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -422,12 +410,8 @@ def Source_about_callback(update: Update, context: CallbackContext):
             ),
         )
     elif query.data == "source_back":
-        first_name = update.effective_user.first_name
-        query.message.edit_photo(
-                BOT_IMAGE,
-                PM_START_TEXT.format(
-                    escape_markdown(first_name), escape_markdown(context.bot.first_name)
-                ),
+        query.message.edit_text(
+                PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
