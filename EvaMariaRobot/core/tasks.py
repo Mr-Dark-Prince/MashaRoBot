@@ -4,8 +4,8 @@ from time import time
 from pyrogram import filters
 from pyrogram.types import Message
 
-from wbb import BOT_ID, SUDOERS, USERBOT_PREFIX, app2
-from wbb.core.sections import bold, section, w
+from EvaMariaRobot import BOT_ID, SUDOERS, USERBOT_PREFIX, app2
+from EvaMariaRobot.core.sections import bold, section, w
 
 tasks = {}
 TASKS_LOCK = Lock()
