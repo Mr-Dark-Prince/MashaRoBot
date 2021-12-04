@@ -1,26 +1,3 @@
-"""
-MIT License
-
-Copyright (c) 2021 TheHamkerCat
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-"""
 import asyncio
 import os
 import sys
@@ -40,15 +17,15 @@ from pyrogram.types import (CallbackQuery, InlineKeyboardButton,
                             InputTextMessageContent)
 from search_engine_parser import GoogleSearch
 
-from wbb import (BOT_USERNAME, MESSAGE_DUMP_CHAT, SUDOERS, USERBOT_ID,
+from EvaMariaRobot import (BOT_USERNAME, MESSAGE_DUMP_CHAT, SUDOERS, USERBOT_ID,
                  USERBOT_NAME, USERBOT_USERNAME, app, app2, arq)
-from wbb.core.keyboard import ikb
-from wbb.core.tasks import _get_tasks_text, all_tasks, rm_task
-from wbb.core.types import InlineQueryResultCachedDocument
-from wbb.modules.info import get_chat_info, get_user_info
-from wbb.modules.music import download_youtube_audio
-from wbb.utils.functions import test_speedtest
-from wbb.utils.pastebin import paste
+from EvaMariaRobot.core.keyboard import ikb
+from EvaMariaRobot.core.tasks import _get_tasks_text, all_tasks, rm_task
+from EvaMariaRobot.core.types import InlineQueryResultCachedDocument
+from EvaMariaRobot.modules.info import get_chat_info, get_user_info
+from EvaMariaRobot .modules.music import download_youtube_audio
+from EvaMariaRobot.utils.functions import test_speedtest
+from EvaMariaRobot.utils.pastebin import paste
 
 keywords_list = [
     "image",
