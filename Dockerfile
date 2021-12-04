@@ -1,7 +1,7 @@
 FROM williambutcherbot/python:latest
 
-WORKDIR /wbb
-RUN chmod 777 /wbb
+WORKDIR /EvaMariaRobot
+RUN chmod 777 /EvaMariaRobot
 
 # Installing Requirements
 RUN pip3 install -U pip
@@ -16,4 +16,4 @@ RUN pip3 install --no-cache-dir -U -r requirements.txt
 COPY . .
 
 # Starting Bot
-CMD ["python3", "-m", "wbb"]
+CMD ["python3", "-m", "EvaMariaRobot"]
