@@ -3,8 +3,8 @@ from time import time
 
 import aiofiles
 
-from wbb import aiohttpsession as session
-from wbb.core.tasks import add_task
+from EvaMariaRobot import aiohttpsession as session
+from EvaMariaRobot.core.tasks import add_task
 
 
 def ensure_status(status_code: int):
