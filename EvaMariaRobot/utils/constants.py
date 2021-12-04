@@ -3,7 +3,7 @@
 from pyrogram.filters import command, edited
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
-from wbb import BOT_USERNAME, app
+from EvaMariaRobot import BOT_USERNAME, app
 
 MARKDOWN = """
 Read the below text carefully to find out how formatting works!
