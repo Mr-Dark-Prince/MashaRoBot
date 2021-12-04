@@ -1,7 +1,7 @@
-FROM EvaMariaRobot/python:latest
+FROM evamariarobot/python:latest
 
-WORKDIR /EvaMariaRobot
-RUN chmod 777 /EvaMariaRobot
+WORKDIR /evamariarobot
+RUN chmod 777 /evamariarobot
 
 # Installing Requirements
 RUN pip3 install -U pip
