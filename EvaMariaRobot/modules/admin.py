@@ -62,7 +62,7 @@ async def member_permissions(chat_id: int, user_id: int):
     return perms
 
 
-from wbb.core.decorators.permissions import adminsOnly
+from EvaMariaRobot.core.decorators.permissions import adminsOnly
 
 
 async def list_admins(chat_id: int):
