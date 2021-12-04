@@ -1,26 +1,3 @@
-"""
-MIT License
-
-Copyright (c) 2021 TheHamkerCat
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-"""
 import asyncio
 import importlib
 import re
@@ -29,13 +6,13 @@ import uvloop
 from pyrogram import filters, idle
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from wbb import (BOT_NAME, BOT_USERNAME, LOG_GROUP_ID, USERBOT_NAME,
+from EvaMariaRobot import (BOT_NAME, BOT_USERNAME, LOG_GROUP_ID, USERBOT_NAME,
                  aiohttpsession, app)
-from wbb.modules import ALL_MODULES
-from wbb.modules.sudoers import bot_sys_stats
-from wbb.utils import paginate_modules
-from wbb.utils.constants import MARKDOWN
-from wbb.utils.dbfunctions import clean_restart_stage
+from EvaMariaRobot.modules import ALL_MODULES
+from EvaMariaRobot.modules.sudoers import bot_sys_stats
+from EvaMariaRobot.utils import paginate_modules
+from EvaMariaRobot.utils.constants import MARKDOWN
+from EvaMariaRobot.utils.dbfunctions import clean_restart_stage
 
 loop = asyncio.get_event_loop()
 
