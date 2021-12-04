@@ -1,37 +1,14 @@
-"""
-MIT License
-
-Copyright (c) 2021 TheHamkerCat
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-"""
 import asyncio
 
 from pyrogram import filters
 from pyrogram.types import CallbackQuery, ChatPermissions, Message
 
-from wbb import BOT_ID, SUDOERS, app
-from wbb.core.decorators.errors import capture_err
-from wbb.core.keyboard import ikb
-from wbb.utils.dbfunctions import (add_warn, get_warn, int_to_alpha,
+from EvaMariaRobot import BOT_ID, SUDOERS, app
+from EvaMariaRobot.core.decorators.errors import capture_err
+from EvaMariaRobot.core.keyboard import ikb
+from EvaMariaRobot.utils.dbfunctions import (add_warn, get_warn, int_to_alpha,
                                    remove_warns, save_filter)
-from wbb.utils.functions import (extract_user, extract_user_and_reason,
+from EvaMariaRobot.utils.functions import (extract_user, extract_user_and_reason,
                                  time_converter)
 
 __MODULE__ = "Admin"
