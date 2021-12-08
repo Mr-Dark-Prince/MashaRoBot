@@ -1,2 +1,2 @@
-# MashaRoBot
- MashaRobot :  📑Editor's choice 
+# MashaRoBo
+Deleted source.. 🤷‍♂️
