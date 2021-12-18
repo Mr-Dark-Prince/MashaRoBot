@@ -2360,6 +2360,47 @@ def get_chat(chat_id, chat_data):
 
 def fed_owner_help(update: Update, context: CallbackContext):
     update.effective_message.reply_text(
+        FED_OWNER_HELP,
+        parse_mode=ParseMode.MARKDOWN,
+    )
+
+
+def fed_admin_help(update: Update, context: CallbackContext):
+    update.effective_message.reply_text(
+        FED_ADMIN_HELP,
+        parse_mode=ParseMode.MARKDOWN,
+    )
+
+
+@run_async
+def fed_user_help(update: Update, context: CallbackContext):
+    update.effective_message.reply_text(
+        FED_USER_HELP,
+        parse_mode=ParseMode.MARKDOWN,
+    )
+
+
+def fed_help(update: Update, context: CallbackContext):
+    query = update.callback_query
+    bot = context.bot
+    help_info = query.data.split("fed_help_")[1]
+    if help_info == "owner":
+        help_text = FED_OWNER_HELP
+    elif help_info == "admin":
+        help_text = FED_ADMIN_HELP
+    elif help_info == "user":
+        help_text = FED_USER_HELP
+    query.message.edit_text(
+        text=help_text,
+        parse_mode=ParseMode.MARKDOWN,
+        reply_markup=InlineKeyboardMarkup(
+            [[InlineKeyboardButton(text="Back", callback_data=f"help_module({__mod_name__.lower()})")]],
+        ),
+    )
+
+
+def fed_owner_help(update: Update, context: CallbackContext):
+    update.effective_message.reply_text(
         """*👑 Fed Owner Only:*
  • `/newfed <fed_name>`*:* Creates a Federation, One allowed per user
  • `/renamefed <fed_id> <new_fed_name>`*:* Renames the fed id to a new name
@@ -2406,6 +2447,28 @@ def fed_user_help(update: Update, context: CallbackContext):
 
 __mod_name__ = "Federations"
 
+__help__ = [
+    """
+Everything is fun, until a spammer starts entering your group, and you have to block it. Then you need to start banning more, and more, and it hurts.
+But then you have many groups, and you don't want this spammer to be in one of your groups - how can you deal? Do you have to manually block it, in all your groups?\n
+*No longer!* With Federation, you can make a ban in one chat overlap with all other chats.\n
+You can even designate federation admins, so your trusted admin can ban all the spammers from chats you want to protect.\n
+*Commands:*\n
+Feds are now divided into 3 sections for your ease.
+• `/fedownerhelp`*:* Provides help for fed creation and owner only commands
+• `/fedadminhelp`*:* Provides help for fed administration commands
+• `/feduserhelp`*:* Provides help for commands anyone can use""",
+
+    [
+        InlineKeyboardButton(text="Admin Commands", callback_data="fed_help_admin"),
+        InlineKeyboardButton(text="Federation Owner Commands", callback_data="fed_help_owner"),
+    ],
+    [
+        InlineKeyboardButton(text="User Commands", callback_data="fed_help_user"),
+    ],
+]
+
+
 
 NEW_FED_HANDLER = CommandHandler("newfed", new_fed, run_async=True)
 DEL_FED_HANDLER = CommandHandler("delfed", del_fed, run_async=True)
@@ -2441,6 +2504,8 @@ DELETEBTN_FED_HANDLER = CallbackQueryHandler(
 FED_OWNER_HELP_HANDLER = CommandHandler("fedownerhelp", fed_owner_help, run_async=True)
 FED_ADMIN_HELP_HANDLER = CommandHandler("fedadminhelp", fed_admin_help, run_async=True)
 FED_USER_HELP_HANDLER = CommandHandler("feduserhelp", fed_user_help, run_async=True)
+FEDHELP_BUTTON_HANDLER = CallbackQueryHandler(fed_help, pattern=r"fed_help_", run_async=True
+)
 
 dispatcher.add_handler(NEW_FED_HANDLER)
 dispatcher.add_handler(DEL_FED_HANDLER)
@@ -2472,3 +2537,4 @@ dispatcher.add_handler(DELETEBTN_FED_HANDLER)
 dispatcher.add_handler(FED_OWNER_HELP_HANDLER)
 dispatcher.add_handler(FED_ADMIN_HELP_HANDLER)
 dispatcher.add_handler(FED_USER_HELP_HANDLER)
+dispatcher.add_handler(FEDHELP_BUTTON_HANDLER)
