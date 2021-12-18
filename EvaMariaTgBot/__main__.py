@@ -92,7 +92,7 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text="About eva Robot", callback_data="eva_"),
+        InlineKeyboardButton(text="Nothing", callback_data="help_back"),
     ],
     [
         InlineKeyboardButton(text="Get Help", callback_data="help_back"),
@@ -382,7 +382,7 @@ def eva_about_callback(update, context):
                     InlineKeyboardButton(text="Credits", callback_data="eva_credit"),
                  ],
                  [
-                    InlineKeyboardButton(text="Source Code", url="https://github.com/kennedy-ex/EvaMariaTgBot"),
+                    InlineKeyboardButton(text="Source Code", url="https://github.com/Mister-Dark-Prince/EvaMariaTgBot"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="eva_back"),
@@ -442,7 +442,7 @@ def eva_about_callback(update, context):
                 [
                  [
                     InlineKeyboardButton(text="Support", url="t.me/evasupport"),
-                    InlineKeyboardButton(text="Updates", url="https://t.me/KennedyProject"),
+                    InlineKeyboardButton(text="Updates", url="https://t.me/Mr-dark-prince"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="eva_"),
