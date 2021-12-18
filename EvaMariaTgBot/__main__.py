@@ -102,7 +102,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="➗ Add eva To Your Group ➗", url="t.me/EmiexRobot?startgroup=new"),
+            text="➗ Add eva To Your Group ➗", url="t.me/EvaMariaTgBot?startgroup=new"),
     ],
 ]
 
@@ -749,7 +749,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 1606221784:
+        if OWNER_ID != 5029694040:
             update.effective_message.reply_text(
                 "I'm free for everyone ❤️ If you wanna make me smile, just join"
                 "[My Channel]({})".format(DONATION_LINK),
