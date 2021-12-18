@@ -8,6 +8,10 @@ import uuid
 from io import BytesIO
 
 import EvaMariaTgBot.modules.sql.feds_sql as sql
+from EvaMariaTgBot.confing import (
+    get_str_key,
+    get_int_key,
+)
 from EvaMariaTgBot import (
     EVENT_LOGS,
     LOGGER,
